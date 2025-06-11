@@ -30,7 +30,9 @@ namespace SchoolManagementSystem.Views
 
         public override void btnSave_Click(object sender, EventArgs e)
         {
-           
+            UserAdd userAdd = new UserAdd();
+            userAdd.Show();
+            userAdd.StartPosition = FormStartPosition.CenterScreen;
             LoadData();
         }
         private void LoadData()

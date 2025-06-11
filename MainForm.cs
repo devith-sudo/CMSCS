@@ -47,17 +47,46 @@ namespace SchoolManagementSystem
             F.Dock = DockStyle.Fill;
             F.Show();
         }
+
+        #region NavigationMenu
         private void navigtionMenu_OnItemSelected(object sender, string path, EventArgs e)
         {
             switch (path)
             {
                 case "Dashboard":
                     break;
-                        
+
+                case "Admission Management.Admin Student":
+                    break;
+
+                case "Admission Management.Student Promotion":
+                    break;
+
+                case "Parent Management":
+                    break;
+
+                case "Staff Management":
+                    break;
+
+                case "ID Card Printing.Print Student Card":
+                    AddControls(new frmUserView());
+                    break;
+
+                case "Settings.Logout":
+                    break;
+
+                case "Reports":
+                    break;
+
                 case "Settings.Users":
                     AddControls(new frmUserView());
                     break;
+
+                case "Settings.School Information":
+                    AddControls(new SchoolInfo());
+                    break;
             }
         }
+        #endregion
     }
 }

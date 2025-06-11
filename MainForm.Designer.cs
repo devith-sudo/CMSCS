@@ -28,37 +28,73 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
-            this.ControlsPanel = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
+            this.navigtionMenu = new Kimtoo.NavigtionMenu();
+            this.topPanel = new System.Windows.Forms.Panel();
             this.btnMin = new Guna.UI2.WinForms.Guna2ControlBox();
             this.btnMax = new Guna.UI2.WinForms.Guna2ControlBox();
             this.btnExit = new Guna.UI2.WinForms.Guna2ControlBox();
-            this.navigtionMenu = new Kimtoo.NavigtionMenu();
-            this.panel2.SuspendLayout();
+            this.ControlsPanel = new System.Windows.Forms.Panel();
+            this.guna2DragControl1 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
+            this.topPanel.SuspendLayout();
             this.SuspendLayout();
             // 
-            // ControlsPanel
+            // navigtionMenu
             // 
-            this.ControlsPanel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.navigtionMenu.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.navigtionMenu.AutoScroll = true;
+            this.navigtionMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(38)))), ((int)(((byte)(61)))));
+            this.navigtionMenu.BackColor_Click = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(49)))), ((int)(((byte)(70)))));
+            this.navigtionMenu.BackColor_Hover = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(49)))), ((int)(((byte)(70)))));
+            this.navigtionMenu.BackColor_Selected = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(104)))), ((int)(((byte)(240)))));
+            this.navigtionMenu.DisableToggling = new string[0];
+            this.navigtionMenu.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.navigtionMenu.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.navigtionMenu.ForeColor_Selected = System.Drawing.Color.Empty;
+            this.navigtionMenu.IsExpandable = false;
+            this.navigtionMenu.IsExpanded = true;
+            this.navigtionMenu.ItemHeight = 35;
+            this.navigtionMenu.ItemImageSize = new System.Drawing.Size(20, 20);
+            this.navigtionMenu.ItemPadding = new System.Windows.Forms.Padding(8, 0, 0, 0);
+            this.navigtionMenu.ItemRightImageMargin = 20;
+            this.navigtionMenu.ItemRightImageSize = new System.Drawing.Size(15, 15);
+            this.navigtionMenu.Items = new Kimtoo.ButtonItem[] {
+        ((Kimtoo.ButtonItem)(resources.GetObject("navigtionMenu.Items"))),
+        ((Kimtoo.ButtonItem)(resources.GetObject("navigtionMenu.Items1"))),
+        ((Kimtoo.ButtonItem)(resources.GetObject("navigtionMenu.Items2"))),
+        ((Kimtoo.ButtonItem)(resources.GetObject("navigtionMenu.Items3"))),
+        ((Kimtoo.ButtonItem)(resources.GetObject("navigtionMenu.Items4"))),
+        ((Kimtoo.ButtonItem)(resources.GetObject("navigtionMenu.Items5"))),
+        ((Kimtoo.ButtonItem)(resources.GetObject("navigtionMenu.Items6"))),
+        ((Kimtoo.ButtonItem)(resources.GetObject("navigtionMenu.Items7"))),
+        ((Kimtoo.ButtonItem)(resources.GetObject("navigtionMenu.Items8"))),
+        ((Kimtoo.ButtonItem)(resources.GetObject("navigtionMenu.Items9"))),
+        ((Kimtoo.ButtonItem)(resources.GetObject("navigtionMenu.Items10"))),
+        ((Kimtoo.ButtonItem)(resources.GetObject("navigtionMenu.Items11"))),
+        ((Kimtoo.ButtonItem)(resources.GetObject("navigtionMenu.Items12"))),
+        ((Kimtoo.ButtonItem)(resources.GetObject("navigtionMenu.Items13"))),
+        ((Kimtoo.ButtonItem)(resources.GetObject("navigtionMenu.Items14")))};
+            this.navigtionMenu.ItemTextMargin = 8;
+            this.navigtionMenu.Location = new System.Drawing.Point(0, 0);
+            this.navigtionMenu.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.navigtionMenu.Name = "navigtionMenu";
+            this.navigtionMenu.Size = new System.Drawing.Size(317, 789);
+            this.navigtionMenu.TabIndex = 3;
+            this.navigtionMenu.OnItemSelected += new Kimtoo.NavigtionMenu.OnSelectEventHandler(this.navigtionMenu_OnItemSelected);
+            // 
+            // topPanel
+            // 
+            this.topPanel.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.ControlsPanel.Location = new System.Drawing.Point(317, 104);
-            this.ControlsPanel.Name = "ControlsPanel";
-            this.ControlsPanel.Size = new System.Drawing.Size(831, 685);
-            this.ControlsPanel.TabIndex = 1;
-            // 
-            // panel2
-            // 
-            this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel2.Controls.Add(this.btnMin);
-            this.panel2.Controls.Add(this.btnMax);
-            this.panel2.Controls.Add(this.btnExit);
-            this.panel2.Location = new System.Drawing.Point(285, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(863, 104);
-            this.panel2.TabIndex = 2;
+            this.topPanel.Controls.Add(this.btnMin);
+            this.topPanel.Controls.Add(this.btnMax);
+            this.topPanel.Controls.Add(this.btnExit);
+            this.topPanel.Location = new System.Drawing.Point(285, 0);
+            this.topPanel.Name = "topPanel";
+            this.topPanel.Size = new System.Drawing.Size(863, 87);
+            this.topPanel.TabIndex = 2;
             // 
             // btnMin
             // 
@@ -98,48 +134,21 @@
             this.btnExit.TabIndex = 3;
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
-            // navigtionMenu
+            // ControlsPanel
             // 
-            this.navigtionMenu.AutoScroll = true;
-            this.navigtionMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(38)))), ((int)(((byte)(61)))));
-            this.navigtionMenu.BackColor_Click = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(49)))), ((int)(((byte)(70)))));
-            this.navigtionMenu.BackColor_Hover = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(49)))), ((int)(((byte)(70)))));
-            this.navigtionMenu.BackColor_Selected = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(104)))), ((int)(((byte)(240)))));
-            this.navigtionMenu.DisableToggling = new string[0];
-            this.navigtionMenu.Dock = System.Windows.Forms.DockStyle.Left;
-            this.navigtionMenu.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.navigtionMenu.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.navigtionMenu.ForeColor_Selected = System.Drawing.Color.Empty;
-            this.navigtionMenu.IsExpandable = true;
-            this.navigtionMenu.IsExpanded = true;
-            this.navigtionMenu.ItemHeight = 35;
-            this.navigtionMenu.ItemImageSize = new System.Drawing.Size(20, 20);
-            this.navigtionMenu.ItemPadding = new System.Windows.Forms.Padding(8, 0, 0, 0);
-            this.navigtionMenu.ItemRightImageMargin = 20;
-            this.navigtionMenu.ItemRightImageSize = new System.Drawing.Size(15, 15);
-            this.navigtionMenu.Items = new Kimtoo.ButtonItem[] {
-        ((Kimtoo.ButtonItem)(resources.GetObject("navigtionMenu.Items"))),
-        ((Kimtoo.ButtonItem)(resources.GetObject("navigtionMenu.Items1"))),
-        ((Kimtoo.ButtonItem)(resources.GetObject("navigtionMenu.Items2"))),
-        ((Kimtoo.ButtonItem)(resources.GetObject("navigtionMenu.Items3"))),
-        ((Kimtoo.ButtonItem)(resources.GetObject("navigtionMenu.Items4"))),
-        ((Kimtoo.ButtonItem)(resources.GetObject("navigtionMenu.Items5"))),
-        ((Kimtoo.ButtonItem)(resources.GetObject("navigtionMenu.Items6"))),
-        ((Kimtoo.ButtonItem)(resources.GetObject("navigtionMenu.Items7"))),
-        ((Kimtoo.ButtonItem)(resources.GetObject("navigtionMenu.Items8"))),
-        ((Kimtoo.ButtonItem)(resources.GetObject("navigtionMenu.Items9"))),
-        ((Kimtoo.ButtonItem)(resources.GetObject("navigtionMenu.Items10"))),
-        ((Kimtoo.ButtonItem)(resources.GetObject("navigtionMenu.Items11"))),
-        ((Kimtoo.ButtonItem)(resources.GetObject("navigtionMenu.Items12"))),
-        ((Kimtoo.ButtonItem)(resources.GetObject("navigtionMenu.Items13"))),
-        ((Kimtoo.ButtonItem)(resources.GetObject("navigtionMenu.Items14")))};
-            this.navigtionMenu.ItemTextMargin = 8;
-            this.navigtionMenu.Location = new System.Drawing.Point(0, 0);
-            this.navigtionMenu.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
-            this.navigtionMenu.Name = "navigtionMenu";
-            this.navigtionMenu.Size = new System.Drawing.Size(317, 789);
-            this.navigtionMenu.TabIndex = 3;
-            this.navigtionMenu.OnItemSelected += new Kimtoo.NavigtionMenu.OnSelectEventHandler(this.navigtionMenu_OnItemSelected);
+            this.ControlsPanel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.ControlsPanel.Location = new System.Drawing.Point(317, 93);
+            this.ControlsPanel.Name = "ControlsPanel";
+            this.ControlsPanel.Size = new System.Drawing.Size(831, 696);
+            this.ControlsPanel.TabIndex = 1;
+            // 
+            // guna2DragControl1
+            // 
+            this.guna2DragControl1.DockIndicatorTransparencyValue = 0.6D;
+            this.guna2DragControl1.TargetControl = this.topPanel;
+            this.guna2DragControl1.UseTransparentDrag = true;
             // 
             // MainForm
             // 
@@ -147,14 +156,14 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1149, 789);
             this.Controls.Add(this.navigtionMenu);
-            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.topPanel);
             this.Controls.Add(this.ControlsPanel);
             this.Location = new System.Drawing.Point(0, 0);
             this.Name = "MainForm";
             this.Text = "MainForm";
             this.WindowState = System.Windows.Forms.FormWindowState.Normal;
             this.Load += new System.EventHandler(this.MainForm_Load);
-            this.panel2.ResumeLayout(false);
+            this.topPanel.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -162,10 +171,11 @@
         #endregion
 
         private System.Windows.Forms.Panel ControlsPanel;
-        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel topPanel;
         private Guna.UI2.WinForms.Guna2ControlBox btnExit;
         private Guna.UI2.WinForms.Guna2ControlBox btnMin;
         private Guna.UI2.WinForms.Guna2ControlBox btnMax;
         private Kimtoo.NavigtionMenu navigtionMenu;
+        private Guna.UI2.WinForms.Guna2DragControl guna2DragControl1;
     }
 }

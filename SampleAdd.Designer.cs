@@ -135,6 +135,7 @@
             // btnExit
             // 
             this.btnExit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnExit.BorderRadius = 4;
             this.btnExit.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(152)))), ((int)(((byte)(166)))));
             this.btnExit.IconColor = System.Drawing.Color.White;
             this.btnExit.Location = new System.Drawing.Point(743, 12);
@@ -169,11 +170,11 @@
         #endregion
         private System.Windows.Forms.Panel ButtonPanel;
         private Guna.UI2.WinForms.Guna2ControlBox btnExit;
-        public System.Windows.Forms.Panel TopPanel;
         public System.Windows.Forms.Label label1;
         public Guna.UI2.WinForms.Guna2Button btnSave;
         public Guna.UI2.WinForms.Guna2Button btnDelete;
         public Guna.UI2.WinForms.Guna2Button btnClose;
         private Guna.UI2.WinForms.Guna2DragControl guna2DragControl1;
+        private System.Windows.Forms.Panel TopPanel;
     }
 }

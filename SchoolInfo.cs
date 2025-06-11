@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace SchoolManagementSystem.Model
+namespace SchoolManagementSystem
 {
-    public partial class UsersAdd : SampleAdd
+    public partial class SchoolInfo : Form
     {
-        public UsersAdd()
+        public SchoolInfo()
         {
             InitializeComponent();
         }
