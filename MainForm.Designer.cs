@@ -77,10 +77,10 @@
         ((Kimtoo.ButtonItem)(resources.GetObject("navigtionMenu.Items13"))),
         ((Kimtoo.ButtonItem)(resources.GetObject("navigtionMenu.Items14")))};
             this.navigtionMenu.ItemTextMargin = 8;
-            this.navigtionMenu.Location = new System.Drawing.Point(0, 0);
+            this.navigtionMenu.Location = new System.Drawing.Point(0, 93);
             this.navigtionMenu.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.navigtionMenu.Name = "navigtionMenu";
-            this.navigtionMenu.Size = new System.Drawing.Size(317, 789);
+            this.navigtionMenu.Size = new System.Drawing.Size(317, 696);
             this.navigtionMenu.TabIndex = 3;
             this.navigtionMenu.OnItemSelected += new Kimtoo.NavigtionMenu.OnSelectEventHandler(this.navigtionMenu_OnItemSelected);
             // 
@@ -158,10 +158,8 @@
             this.Controls.Add(this.navigtionMenu);
             this.Controls.Add(this.topPanel);
             this.Controls.Add(this.ControlsPanel);
-            this.Location = new System.Drawing.Point(0, 0);
             this.Name = "MainForm";
             this.Text = "MainForm";
-            this.WindowState = System.Windows.Forms.FormWindowState.Normal;
             this.Load += new System.EventHandler(this.MainForm_Load);
             this.topPanel.ResumeLayout(false);
             this.ResumeLayout(false);

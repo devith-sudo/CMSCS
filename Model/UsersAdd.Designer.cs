@@ -1,6 +1,6 @@
-﻿namespace SchoolManagementSystem
+﻿namespace SchoolManagementSystem.Model
 {
-    partial class Sample
+    partial class UsersAdd
     {
         /// <summary>
         /// Required designer variable.
@@ -28,23 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.SuspendLayout();
-            // 
-            // Sample
-            // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.components = new System.ComponentModel.Container();
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(36)))), ((int)(((byte)(66)))));
-            this.ClientSize = new System.Drawing.Size(974, 582);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "Sample";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form1";
-            this.ResumeLayout(false);
-
+            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Text = "UsersAdd";
         }
 
         #endregion
     }
 }
-

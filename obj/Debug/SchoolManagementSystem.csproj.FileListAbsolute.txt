@@ -1,9 +1,11 @@
 D:\Universities\Setec SV1\C#3\SchoolManagementSystem\obj\Debug\SchoolManagementSystem.csproj.AssemblyReference.cache
 D:\Universities\Setec SV1\C#3\SchoolManagementSystem\obj\Debug\SchoolManagementSystem.MainForm.resources
+D:\Universities\Setec SV1\C#3\SchoolManagementSystem\obj\Debug\SchoolManagementSystem.Model.UserAdd.resources
 D:\Universities\Setec SV1\C#3\SchoolManagementSystem\obj\Debug\SchoolManagementSystem.Sample.resources
 D:\Universities\Setec SV1\C#3\SchoolManagementSystem\obj\Debug\SchoolManagementSystem.Properties.Resources.resources
 D:\Universities\Setec SV1\C#3\SchoolManagementSystem\obj\Debug\SchoolManagementSystem.SampleAdd.resources
 D:\Universities\Setec SV1\C#3\SchoolManagementSystem\obj\Debug\SchoolManagementSystem.SampleView.resources
+D:\Universities\Setec SV1\C#3\SchoolManagementSystem\obj\Debug\SchoolManagementSystem.SchoolInfo.resources
 D:\Universities\Setec SV1\C#3\SchoolManagementSystem\obj\Debug\SchoolManagementSystem.Testing.resources
 D:\Universities\Setec SV1\C#3\SchoolManagementSystem\obj\Debug\SchoolManagementSystem.Views.frmUserView.resources
 D:\Universities\Setec SV1\C#3\SchoolManagementSystem\obj\Debug\SchoolManagementSystem.csproj.GenerateResource.cache
@@ -34,5 +36,3 @@ D:\Universities\Setec SV1\C#3\SchoolManagementSystem\bin\Debug\System.Runtime.Co
 D:\Universities\Setec SV1\C#3\SchoolManagementSystem\obj\Debug\SchoolMa.D9F7BBC0.Up2Date
 D:\Universities\Setec SV1\C#3\SchoolManagementSystem\obj\Debug\SchoolManagementSystem.exe
 D:\Universities\Setec SV1\C#3\SchoolManagementSystem\obj\Debug\SchoolManagementSystem.pdb
-D:\Universities\Setec SV1\C#3\SchoolManagementSystem\obj\Debug\SchoolManagementSystem.Model.UserAdd.resources
-D:\Universities\Setec SV1\C#3\SchoolManagementSystem\obj\Debug\SchoolManagementSystem.SchoolInfo.resources

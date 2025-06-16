@@ -358,7 +358,6 @@
             this.Controls.Add(this.TopPanel);
             this.Location = new System.Drawing.Point(0, 0);
             this.Name = "UserAdd";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "UserAdd";
             this.WindowState = System.Windows.Forms.FormWindowState.Normal;
             this.Load += new System.EventHandler(this.UserAdd_Load);

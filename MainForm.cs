@@ -35,8 +35,8 @@ namespace SchoolManagementSystem
         }
 
         private void MainForm_Load(object sender, EventArgs e)
-        {
-            btnMax.PerformClick();
+        {              
+                btnMax.PerformClick();
         }
 
         private void AddControls(Form F)
