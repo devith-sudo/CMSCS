@@ -37,6 +37,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.btnExit = new Guna.UI2.WinForms.Guna2ControlBox();
             this.guna2DragControl1 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
+            this.guna2MessageDialog1 = new Guna.UI2.WinForms.Guna2MessageDialog();
             this.ButtonPanel.SuspendLayout();
             this.TopPanel.SuspendLayout();
             this.SuspendLayout();
@@ -149,6 +150,15 @@
             this.guna2DragControl1.TargetControl = this.TopPanel;
             this.guna2DragControl1.UseTransparentDrag = true;
             // 
+            // guna2MessageDialog1
+            // 
+            this.guna2MessageDialog1.Buttons = Guna.UI2.WinForms.MessageDialogButtons.OK;
+            this.guna2MessageDialog1.Caption = "SMS";
+            this.guna2MessageDialog1.Icon = Guna.UI2.WinForms.MessageDialogIcon.Information;
+            this.guna2MessageDialog1.Parent = null;
+            this.guna2MessageDialog1.Style = Guna.UI2.WinForms.MessageDialogStyle.Dark;
+            this.guna2MessageDialog1.Text = null;
+            // 
             // SampleAdd
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -156,10 +166,8 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.ButtonPanel);
             this.Controls.Add(this.TopPanel);
-            this.Location = new System.Drawing.Point(0, 0);
             this.Name = "SampleAdd";
             this.Text = "SimpleAdd";
-            this.WindowState = System.Windows.Forms.FormWindowState.Normal;
             this.ButtonPanel.ResumeLayout(false);
             this.TopPanel.ResumeLayout(false);
             this.TopPanel.PerformLayout();
@@ -176,5 +184,6 @@
         public Guna.UI2.WinForms.Guna2Button btnClose;
         private Guna.UI2.WinForms.Guna2DragControl guna2DragControl1;
         private System.Windows.Forms.Panel TopPanel;
+        public Guna.UI2.WinForms.Guna2MessageDialog guna2MessageDialog1;
     }
 }

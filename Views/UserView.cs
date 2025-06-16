@@ -37,13 +37,18 @@ namespace SchoolManagementSystem.Views
         }
         private void LoadData()
         {
-            string qry = "Select * form tblUser where uName like '%" + txtSearch.Text + "%'";
+            string qry = "Select uName, uUsername, uPhone, uStatus from tblUser where uName like '%" + txtSearch.Text + "%' order by uName ASC";
             ListBox lb = new ListBox();
-            lb.Items.Add(dgvSr);
             lb.Items.Add(dgvName);
             lb.Items.Add(dgvUser);
-            lb.Items.Add(dgvPass);
+            lb.Items.Add(dgvPhone);
             lb.Items.Add(dgvStatus);
+            MainClass.loadData(qry, DataGridView, lb);
+        }
+
+        private void DataGridView_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

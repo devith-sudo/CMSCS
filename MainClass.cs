@@ -17,7 +17,7 @@ namespace SchoolManagementSystem
     {
         #region Database Connection
         //Connecting Database
-        public static readonly string cons = "Data Source=Ravith;Initiial Catalog=School; User ID=sa; Password=092498933";
+        public static readonly string cons = "Data Source=Ravith;Initial Catalog=School; User ID=sa; Password=092498933";
         public static SqlConnection con = new SqlConnection(cons);
         #endregion
 
@@ -76,7 +76,7 @@ namespace SchoolManagementSystem
 
                 for (int i = 0; i < lb.Items.Count; i++)
                 {
-                    string colName1 = ((DataGridView)lb.Items[i]).Name;
+                    string colName1 = ((DataGridViewColumn)lb.Items[i]).Name;
                     gv.Columns[colName1].DataPropertyName = dt.Columns[i].ToString();
                 }
 

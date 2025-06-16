@@ -39,16 +39,19 @@ namespace SchoolManagementSystem.Model
                 Hashtable ht = new Hashtable();
                 MainClass.data_insert_update_delete(qry, ht);
                 MessageBox.Show("Delete Successfully");
+                MainClass.Enable_Reset(this);
+                id = 0;
             }
         }
         #endregion
         #region btnSave
-        private void btnSave_Click(object sender, EventArgs e)
+        public void btnSave_Click(object sender, EventArgs e)
         {
             string qry = "";
             if (id == 0)
             {
-                qry = "Insert into tblUser Value (@name, @user, @pass, @phone, @status";
+                qry = "INSERT INTO tblUser (uName, uUsername, uPass, uPhone, uStatus) " +
+                      "VALUES (@name, @user, @pass, @phone, @status)";
             }
             else
             {
@@ -61,13 +64,15 @@ namespace SchoolManagementSystem.Model
             ht.Add("@name", txtName.Text);
             ht.Add("@user", txtUsername.Text);
             ht.Add("@pass", txtPassword.Text);
+            ht.Add("@phone", txtPhone.Text);
             ht.Add("@status", ComboBoxStatus.Text);
 
             int r = MainClass.data_insert_update_delete(qry, ht);
             if(r > 0)
             {
                 MessageBox.Show("Save Successfully");
-                //MainClass.Enable_Reset
+                MainClass.Enable_Reset(this);
+                id = 0;
             }
         }
         #endregion

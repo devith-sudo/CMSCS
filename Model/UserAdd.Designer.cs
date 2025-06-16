@@ -36,7 +36,7 @@
             this.TopPanel = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.btnExit = new Guna.UI2.WinForms.Guna2ControlBox();
-            this.guna2DragControl1 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
+            this.DragControl = new Guna.UI2.WinForms.Guna2DragControl(this.components);
             this.txtName = new Guna.UI2.WinForms.Guna2TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -47,6 +47,7 @@
             this.txtUsername = new Guna.UI2.WinForms.Guna2TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.ComboBoxStatus = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.Message = new Guna.UI2.WinForms.Guna2MessageDialog();
             this.ButtonPanel.SuspendLayout();
             this.TopPanel.SuspendLayout();
             this.SuspendLayout();
@@ -156,11 +157,11 @@
             this.btnExit.Size = new System.Drawing.Size(45, 29);
             this.btnExit.TabIndex = 2;
             // 
-            // guna2DragControl1
+            // DragControl
             // 
-            this.guna2DragControl1.DockIndicatorTransparencyValue = 0.6D;
-            this.guna2DragControl1.TargetControl = this.TopPanel;
-            this.guna2DragControl1.UseTransparentDrag = true;
+            this.DragControl.DockIndicatorTransparencyValue = 0.6D;
+            this.DragControl.TargetControl = this.TopPanel;
+            this.DragControl.UseTransparentDrag = true;
             // 
             // txtName
             // 
@@ -339,6 +340,15 @@
             this.ComboBoxStatus.Size = new System.Drawing.Size(296, 36);
             this.ComboBoxStatus.TabIndex = 13;
             // 
+            // Message
+            // 
+            this.Message.Buttons = Guna.UI2.WinForms.MessageDialogButtons.OK;
+            this.Message.Caption = "SMS";
+            this.Message.Icon = Guna.UI2.WinForms.MessageDialogIcon.Information;
+            this.Message.Parent = null;
+            this.Message.Style = Guna.UI2.WinForms.MessageDialogStyle.Dark;
+            this.Message.Text = null;
+            // 
             // UserAdd
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -356,10 +366,8 @@
             this.Controls.Add(this.txtName);
             this.Controls.Add(this.ButtonPanel);
             this.Controls.Add(this.TopPanel);
-            this.Location = new System.Drawing.Point(0, 0);
             this.Name = "UserAdd";
             this.Text = "UserAdd";
-            this.WindowState = System.Windows.Forms.FormWindowState.Normal;
             this.Load += new System.EventHandler(this.UserAdd_Load);
             this.ButtonPanel.ResumeLayout(false);
             this.TopPanel.ResumeLayout(false);
@@ -378,7 +386,7 @@
         private System.Windows.Forms.Panel TopPanel;
         public System.Windows.Forms.Label label1;
         private Guna.UI2.WinForms.Guna2ControlBox btnExit;
-        private Guna.UI2.WinForms.Guna2DragControl guna2DragControl1;
+        private Guna.UI2.WinForms.Guna2DragControl DragControl;
         public Guna.UI2.WinForms.Guna2TextBox txtName;
         public System.Windows.Forms.Label label2;
         public System.Windows.Forms.Label label3;
@@ -389,5 +397,6 @@
         public Guna.UI2.WinForms.Guna2TextBox txtUsername;
         public System.Windows.Forms.Label label6;
         private Guna.UI2.WinForms.Guna2ComboBox ComboBoxStatus;
+        public Guna.UI2.WinForms.Guna2MessageDialog Message;
     }
 }
