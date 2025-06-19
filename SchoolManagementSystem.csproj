@@ -102,6 +102,24 @@
     <Compile Include="MainForm.Designer.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Model\School.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Model\School.Designer.cs">
+      <DependentUpon>School.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Model\StaffAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Model\StaffAdd.Designer.cs">
+      <DependentUpon>StaffAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SubjectAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Model\SubjectAdd.Designer.cs">
+      <DependentUpon>SubjectAdd.cs</DependentUpon>
+    </Compile>
     <Compile Include="Model\UserAdd.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -140,6 +158,36 @@
     <Compile Include="Testing.Designer.cs">
       <DependentUpon>Testing.cs</DependentUpon>
     </Compile>
+    <Compile Include="Views\Dashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Dashboard.Designer.cs">
+      <DependentUpon>Dashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Reports.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Reports.Designer.cs">
+      <DependentUpon>Reports.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\StaffView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\StaffView.Designer.cs">
+      <DependentUpon>StaffView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\StudentView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\StudentView.Designer.cs">
+      <DependentUpon>StudentView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Subjectview.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Subjectview.Designer.cs">
+      <DependentUpon>Subjectview.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\UserView.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -148,6 +196,15 @@
     </Compile>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Model\School.resx">
+      <DependentUpon>School.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Model\StaffAdd.resx">
+      <DependentUpon>StaffAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Model\SubjectAdd.resx">
+      <DependentUpon>SubjectAdd.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Model\UserAdd.resx">
       <DependentUpon>UserAdd.cs</DependentUpon>
@@ -175,6 +232,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Testing.resx">
       <DependentUpon>Testing.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Reports.resx">
+      <DependentUpon>Reports.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\StaffView.resx">
+      <DependentUpon>StaffView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Subjectview.resx">
+      <DependentUpon>Subjectview.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\UserView.resx">
       <DependentUpon>UserView.cs</DependentUpon>

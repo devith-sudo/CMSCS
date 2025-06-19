@@ -1,6 +1,6 @@
 ﻿namespace SchoolManagementSystem.Views
 {
-    partial class frmUserView
+    partial class Subjectview
     {
         /// <summary>
         /// Required designer variable.
@@ -32,11 +32,8 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.DataGridView = new Guna.UI2.WinForms.Guna2DataGridView();
-            this.dgvId = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.subjectID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dgvName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgvUser = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgvPhone = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgvStatus = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.DataGridView)).BeginInit();
             this.SuspendLayout();
             // 
@@ -62,11 +59,8 @@
             this.DataGridView.ColumnHeadersHeight = 30;
             this.DataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             this.DataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dgvId,
-            this.dgvName,
-            this.dgvUser,
-            this.dgvPhone,
-            this.dgvStatus});
+            this.subjectID,
+            this.dgvName});
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(220)))), ((int)(((byte)(239)))));
             dataGridViewCellStyle3.Font = new System.Drawing.Font("Arial Rounded MT Bold", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -76,13 +70,13 @@
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.DataGridView.DefaultCellStyle = dataGridViewCellStyle3;
             this.DataGridView.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(201)))), ((int)(((byte)(231)))));
-            this.DataGridView.Location = new System.Drawing.Point(16, 77);
+            this.DataGridView.Location = new System.Drawing.Point(12, 83);
             this.DataGridView.Name = "DataGridView";
             this.DataGridView.ReadOnly = true;
             this.DataGridView.RowHeadersVisible = false;
             this.DataGridView.RowHeadersWidth = 45;
-            this.DataGridView.Size = new System.Drawing.Size(866, 455);
-            this.DataGridView.TabIndex = 1;
+            this.DataGridView.Size = new System.Drawing.Size(869, 368);
+            this.DataGridView.TabIndex = 2;
             this.DataGridView.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.Indigo;
             this.DataGridView.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(197)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
             this.DataGridView.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -107,51 +101,30 @@
             this.DataGridView.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.Silver;
             this.DataGridView.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DataGridView_CellDoubleClick);
             // 
-            // dgvId
+            // subjectID
             // 
-            this.dgvId.FillWeight = 65.48223F;
-            this.dgvId.HeaderText = "No.";
-            this.dgvId.MinimumWidth = 30;
-            this.dgvId.Name = "dgvId";
-            this.dgvId.ReadOnly = true;
+            this.subjectID.FillWeight = 31.79932F;
+            this.subjectID.HeaderText = "No.";
+            this.subjectID.MinimumWidth = 30;
+            this.subjectID.Name = "subjectID";
+            this.subjectID.ReadOnly = true;
             // 
             // dgvName
             // 
-            this.dgvName.FillWeight = 91.12944F;
-            this.dgvName.HeaderText = "Name";
+            this.dgvName.FillWeight = 124.8124F;
+            this.dgvName.HeaderText = "Subject";
             this.dgvName.Name = "dgvName";
             this.dgvName.ReadOnly = true;
             // 
-            // dgvUser
-            // 
-            this.dgvUser.FillWeight = 91.12944F;
-            this.dgvUser.HeaderText = "User";
-            this.dgvUser.Name = "dgvUser";
-            this.dgvUser.ReadOnly = true;
-            // 
-            // dgvPhone
-            // 
-            this.dgvPhone.FillWeight = 91.12944F;
-            this.dgvPhone.HeaderText = "Phone";
-            this.dgvPhone.Name = "dgvPhone";
-            this.dgvPhone.ReadOnly = true;
-            // 
-            // dgvStatus
-            // 
-            this.dgvStatus.FillWeight = 91.12944F;
-            this.dgvStatus.HeaderText = "Status";
-            this.dgvStatus.Name = "dgvStatus";
-            this.dgvStatus.ReadOnly = true;
-            // 
-            // frmUserView
+            // Subjectview
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(894, 544);
+            this.ClientSize = new System.Drawing.Size(893, 463);
             this.Controls.Add(this.DataGridView);
-            this.Name = "frmUserView";
-            this.Text = "UserView";
-            this.Load += new System.EventHandler(this.frmUserView_Load);
+            this.Name = "Subjectview";
+            this.Text = "Subjectview";
+            this.Load += new System.EventHandler(this.Subjectview_Load);
             this.Controls.SetChildIndex(this.DataGridView, 0);
             ((System.ComponentModel.ISupportInitialize)(this.DataGridView)).EndInit();
             this.ResumeLayout(false);
@@ -161,10 +134,7 @@
         #endregion
 
         private Guna.UI2.WinForms.Guna2DataGridView DataGridView;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dgvId;
+        private System.Windows.Forms.DataGridViewTextBoxColumn subjectID;
         private System.Windows.Forms.DataGridViewTextBoxColumn dgvName;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dgvUser;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dgvPhone;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dgvStatus;
     }
 }

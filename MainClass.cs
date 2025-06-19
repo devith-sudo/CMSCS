@@ -85,8 +85,30 @@ namespace SchoolManagementSystem
             catch (Exception ex)
             {
                 MainClass.con.Close();
-                MessageBox.Show(ex.Message);
+                MessageBox.Show(ex.ToString()); // Keep full trace
             }
+        }
+
+        #endregion
+
+        #region For Getting to update Data
+        public static DataTable GetData(string qry)
+        {
+            DataTable dt = new DataTable();
+            try
+            {
+                SqlCommand cmd = new SqlCommand(qry, MainClass.con);
+                cmd.CommandType = System.Data.CommandType.Text;
+
+                SqlDataAdapter da = new SqlDataAdapter(cmd);
+                da.Fill(dt);
+            }
+            catch (Exception ex)
+            {
+                MainClass.con.Close();
+                MessageBox.Show(ex.ToString());
+            }
+            return dt;
         }
         #endregion
 
@@ -395,6 +417,7 @@ namespace SchoolManagementSystem
                 }
 
             }
+            F.Close();
         }
         #endregion
     }

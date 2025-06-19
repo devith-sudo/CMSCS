@@ -34,7 +34,6 @@
             this.btnClose = new Guna.UI2.WinForms.Guna2Button();
             this.btnSave = new Guna.UI2.WinForms.Guna2Button();
             this.TopPanel = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
             this.btnExit = new Guna.UI2.WinForms.Guna2ControlBox();
             this.guna2DragControl1 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
             this.guna2MessageDialog1 = new Guna.UI2.WinForms.Guna2MessageDialog();
@@ -114,24 +113,12 @@
             // TopPanel
             // 
             this.TopPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(41)))), ((int)(((byte)(74)))));
-            this.TopPanel.Controls.Add(this.label1);
             this.TopPanel.Controls.Add(this.btnExit);
             this.TopPanel.Dock = System.Windows.Forms.DockStyle.Top;
             this.TopPanel.Location = new System.Drawing.Point(0, 0);
             this.TopPanel.Name = "TopPanel";
             this.TopPanel.Size = new System.Drawing.Size(800, 69);
             this.TopPanel.TabIndex = 0;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label1.Location = new System.Drawing.Point(48, 27);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(77, 22);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "Header";
             // 
             // btnExit
             // 
@@ -170,7 +157,6 @@
             this.Text = "SimpleAdd";
             this.ButtonPanel.ResumeLayout(false);
             this.TopPanel.ResumeLayout(false);
-            this.TopPanel.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -178,7 +164,6 @@
         #endregion
         private System.Windows.Forms.Panel ButtonPanel;
         private Guna.UI2.WinForms.Guna2ControlBox btnExit;
-        public System.Windows.Forms.Label label1;
         public Guna.UI2.WinForms.Guna2Button btnSave;
         public Guna.UI2.WinForms.Guna2Button btnDelete;
         public Guna.UI2.WinForms.Guna2Button btnClose;

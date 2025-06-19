@@ -1,6 +1,6 @@
 ﻿namespace SchoolManagementSystem.Views
 {
-    partial class frmUserView
+    partial class StaffView
     {
         /// <summary>
         /// Required designer variable.
@@ -33,10 +33,11 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.DataGridView = new Guna.UI2.WinForms.Guna2DataGridView();
             this.dgvId = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dvgsIDNo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dgvName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgvUser = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgvGender = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dgvPhone = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgvStatus = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgvEmail = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.DataGridView)).BeginInit();
             this.SuspendLayout();
             // 
@@ -63,10 +64,11 @@
             this.DataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             this.DataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dgvId,
+            this.dvgsIDNo,
             this.dgvName,
-            this.dgvUser,
+            this.dgvGender,
             this.dgvPhone,
-            this.dgvStatus});
+            this.dgvEmail});
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(220)))), ((int)(((byte)(239)))));
             dataGridViewCellStyle3.Font = new System.Drawing.Font("Arial Rounded MT Bold", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -76,13 +78,13 @@
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.DataGridView.DefaultCellStyle = dataGridViewCellStyle3;
             this.DataGridView.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(201)))), ((int)(((byte)(231)))));
-            this.DataGridView.Location = new System.Drawing.Point(16, 77);
+            this.DataGridView.Location = new System.Drawing.Point(16, 94);
             this.DataGridView.Name = "DataGridView";
             this.DataGridView.ReadOnly = true;
             this.DataGridView.RowHeadersVisible = false;
             this.DataGridView.RowHeadersWidth = 45;
-            this.DataGridView.Size = new System.Drawing.Size(866, 455);
-            this.DataGridView.TabIndex = 1;
+            this.DataGridView.Size = new System.Drawing.Size(951, 494);
+            this.DataGridView.TabIndex = 2;
             this.DataGridView.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.Indigo;
             this.DataGridView.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(197)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
             this.DataGridView.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -106,52 +108,60 @@
             this.DataGridView.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(139)))), ((int)(((byte)(205)))));
             this.DataGridView.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.Silver;
             this.DataGridView.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DataGridView_CellDoubleClick);
+            this.DataGridView.CellFormatting += new System.Windows.Forms.DataGridViewCellFormattingEventHandler(this.DataGridView_CellFormatting);
             // 
             // dgvId
             // 
-            this.dgvId.FillWeight = 65.48223F;
+            this.dgvId.FillWeight = 67.58887F;
             this.dgvId.HeaderText = "No.";
             this.dgvId.MinimumWidth = 30;
             this.dgvId.Name = "dgvId";
             this.dgvId.ReadOnly = true;
             // 
+            // dvgsIDNo
+            // 
+            this.dvgsIDNo.FillWeight = 30.02921F;
+            this.dvgsIDNo.HeaderText = "ID";
+            this.dvgsIDNo.Name = "dvgsIDNo";
+            this.dvgsIDNo.ReadOnly = true;
+            // 
             // dgvName
             // 
-            this.dgvName.FillWeight = 91.12944F;
+            this.dgvName.FillWeight = 177.4554F;
             this.dgvName.HeaderText = "Name";
             this.dgvName.Name = "dgvName";
             this.dgvName.ReadOnly = true;
             // 
-            // dgvUser
+            // dgvGender
             // 
-            this.dgvUser.FillWeight = 91.12944F;
-            this.dgvUser.HeaderText = "User";
-            this.dgvUser.Name = "dgvUser";
-            this.dgvUser.ReadOnly = true;
+            this.dgvGender.FillWeight = 22.83323F;
+            this.dgvGender.HeaderText = "Gender";
+            this.dgvGender.Name = "dgvGender";
+            this.dgvGender.ReadOnly = true;
             // 
             // dgvPhone
             // 
-            this.dgvPhone.FillWeight = 91.12944F;
+            this.dgvPhone.FillWeight = 68.38459F;
             this.dgvPhone.HeaderText = "Phone";
             this.dgvPhone.Name = "dgvPhone";
             this.dgvPhone.ReadOnly = true;
             // 
-            // dgvStatus
+            // dgvEmail
             // 
-            this.dgvStatus.FillWeight = 91.12944F;
-            this.dgvStatus.HeaderText = "Status";
-            this.dgvStatus.Name = "dgvStatus";
-            this.dgvStatus.ReadOnly = true;
+            this.dgvEmail.FillWeight = 172.5793F;
+            this.dgvEmail.HeaderText = "Email";
+            this.dgvEmail.Name = "dgvEmail";
+            this.dgvEmail.ReadOnly = true;
             // 
-            // frmUserView
+            // StaffView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(894, 544);
+            this.ClientSize = new System.Drawing.Size(979, 600);
             this.Controls.Add(this.DataGridView);
-            this.Name = "frmUserView";
-            this.Text = "UserView";
-            this.Load += new System.EventHandler(this.frmUserView_Load);
+            this.Name = "StaffView";
+            this.Text = "StaffView";
+            this.Load += new System.EventHandler(this.StaffView_Load);
             this.Controls.SetChildIndex(this.DataGridView, 0);
             ((System.ComponentModel.ISupportInitialize)(this.DataGridView)).EndInit();
             this.ResumeLayout(false);
@@ -162,9 +172,10 @@
 
         private Guna.UI2.WinForms.Guna2DataGridView DataGridView;
         private System.Windows.Forms.DataGridViewTextBoxColumn dgvId;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dvgsIDNo;
         private System.Windows.Forms.DataGridViewTextBoxColumn dgvName;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dgvUser;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dgvGender;
         private System.Windows.Forms.DataGridViewTextBoxColumn dgvPhone;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dgvStatus;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dgvEmail;
     }
 }

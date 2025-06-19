@@ -1,4 +1,5 @@
-﻿using SchoolManagementSystem.Views;
+﻿using SchoolManagementSystem.Model;
+using SchoolManagementSystem.Views;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -12,33 +13,19 @@ using System.Windows.Forms;
 
 namespace SchoolManagementSystem
 {
-    public partial class MainForm :Sample
+    public partial class MainForm : Sample
     {
         public MainForm()
         {
             InitializeComponent();
         }
 
-        private void btnExit_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
-
-        private void btnMax_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnMin_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void MainForm_Load(object sender, EventArgs e)
-        {              
-                btnMax.PerformClick();
+        {
+
         }
 
+        #region AddControls
         private void AddControls(Form F)
         {
             ControlsPanel.Controls.Clear();
@@ -47,6 +34,7 @@ namespace SchoolManagementSystem
             F.Dock = DockStyle.Fill;
             F.Show();
         }
+        #endregion
 
         #region NavigationMenu
         private void navigtionMenu_OnItemSelected(object sender, string path, EventArgs e)
@@ -68,8 +56,41 @@ namespace SchoolManagementSystem
                 case "Staff Management":
                     break;
 
+                case "Staff Management.Staff Management":
+                    AddControls(new StaffView());
+                    break;
+
                 case "ID Card Printing.Print Student Card":
-                    AddControls(new frmUserView());
+                    //AddControls();
+                    break;
+
+                case "ID Card Printing.Print Staff Card":
+                    //AddControls();
+                    break;
+
+                case "Classes.Manage Class":
+                    break;
+
+                case "Classes.Class Subjects":
+                    break;
+
+                case "Subjects Management":
+                    AddControls(new Subjectview());
+                    break;
+
+                case "Attendance Management.Student Attendance":
+                    break;
+
+                case "Attendance Management.Staff Attendance":
+                    break;
+
+                case "Timetable Management":
+                    break;
+
+                case "Fee Management.Generate Voucher":
+                    break;
+
+                case "Fee Management.Fee Payment":
                     break;
 
                 case "Settings.Logout":
@@ -83,7 +104,8 @@ namespace SchoolManagementSystem
                     break;
 
                 case "Settings.School Information":
-                    AddControls(new SchoolInfo());
+                    School school = new School();
+                    school.Show();
                     break;
             }
         }

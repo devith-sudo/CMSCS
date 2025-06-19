@@ -11,14 +11,14 @@ using System.Windows.Forms;
 
 namespace SchoolManagementSystem.Views
 {
-    public partial class frmUserView : SampleView
+    public partial class StaffView : SampleView
     {
-        public frmUserView()
+        public StaffView()
         {
             InitializeComponent();
         }
 
-        private void frmUserView_Load(object sender, EventArgs e)
+        private void StaffView_Load(object sender, EventArgs e)
         {
             LoadData();
         }
@@ -30,25 +30,23 @@ namespace SchoolManagementSystem.Views
 
         public override void btnSave_Click(object sender, EventArgs e)
         {
-            UserAdd userAdd = new UserAdd();
-            userAdd.Show();
-            userAdd.StartPosition = FormStartPosition.CenterScreen;
+            StaffAdd staffAdd = new StaffAdd();
+            staffAdd.Show();
+            staffAdd.StartPosition = FormStartPosition.CenterScreen;
             LoadData();
         }
-
-        #region LoadData
         private void LoadData()
         {
-            string qry = "Select uName, uUsername, uPhone, uStatus, userID from tblUser where uName like '%" + txtSearch.Text + "%' order by uName ASC";
+            string qry = "Select * from tblStaff where sName like '%" + txtSearch.Text + "%' order by sName ASC";
             ListBox lb = new ListBox();
+            lb.Items.Add(dgvId);
             lb.Items.Add(dgvName);
-            lb.Items.Add(dgvUser);
+            lb.Items.Add(dgvGender);
             lb.Items.Add(dgvPhone);
-            lb.Items.Add(dgvStatus);
+            lb.Items.Add(dgvEmail);
             lb.Items.Add(dgvId);
             MainClass.loadData(qry, DataGridView, lb);
         }
-        #endregion
 
         private void DataGridView_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
@@ -58,5 +56,11 @@ namespace SchoolManagementSystem.Views
             userAdd.ShowDialog();
             LoadData();
         }
+
+        private void DataGridView_CellFormatting(object sender, DataGridViewCellFormattingEventArgs e)
+        {
+
+        }
+
     }
 }

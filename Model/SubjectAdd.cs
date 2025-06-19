@@ -11,29 +11,26 @@ using System.Windows.Forms;
 
 namespace SchoolManagementSystem.Model
 {
-    public partial class UserAdd : Sample
+    public partial class SubjectAdd : Sample
     {
-        public UserAdd()
+        public int id = 0;
+        public SubjectAdd()
         {
             InitializeComponent();
         }
 
-        public int id = 0;
-        private void UserAdd_Load(object sender, EventArgs e)
+        private void SubjectAdd_Load(object sender, EventArgs e)
         {
             if (id > 0)
             {
-                DataTable dt = MainClass.GetData("Select * from tblUser where userID= " + id + "");
+                DataTable dt = MainClass.GetData("Select * from tblSubject where subjectID= " + id);
                 foreach (DataRow row in dt.Rows)
                 {
-                    txtName.Text = row["uName"].ToString();
-                    txtUsername.Text = row["uUsername"].ToString();
-                    txtPassword.Text = row["uPass"].ToString();
-                    txtPhone.Text = row["uPhone"].ToString();
-                    ComboBoxStatus.Text = row["uStatus"].ToString();
+                    txtName.Text = row["subjectName"].ToString(); // Also fix this if your column name is 'subjectName'
                 }
             }
         }
+
 
         #region Event validate
         #region btnClose
@@ -46,7 +43,7 @@ namespace SchoolManagementSystem.Model
         {
             if (id > 0)
             {
-                string qry = "Delete from tblUser where userID=" + id + "";
+                string qry = "Delete from tblSubject where subjectID=" + id + "";
                 Hashtable ht = new Hashtable();
                 MainClass.data_insert_update_delete(qry, ht);
                 MessageBox.Show("Delete Successfully");
@@ -61,21 +58,16 @@ namespace SchoolManagementSystem.Model
             string qry = "";
             if (id == 0)
             {
-                qry = "INSERT INTO tblUser VALUES (@name, @user, @pass, @phone, @status)";
+                qry = "INSERT INTO tblSubject VALUES (@name)";
             }
             else
             {
-                qry = "UPDATE tblUser SET uName = @name, uUsername = @user, uPass = @pass, " +
-                      "uPhone = @phone, uStatus = @status WHERE userID = @id";
+                qry = "UPDATE tblSubject SET subjectName = @name WHERE subjectID = @id";
             }
 
             Hashtable ht = new Hashtable();
             ht.Add("@id", id);
             ht.Add("@name", txtName.Text);
-            ht.Add("@user", txtUsername.Text);
-            ht.Add("@pass", txtPassword.Text);
-            ht.Add("@phone", txtPhone.Text);
-            ht.Add("@status", ComboBoxStatus.Text);
 
             int r = MainClass.data_insert_update_delete(qry, ht);
             if (r > 0)
