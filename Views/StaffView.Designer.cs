@@ -33,7 +33,7 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.DataGridView = new Guna.UI2.WinForms.Guna2DataGridView();
             this.dgvId = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dvgsIDNo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgvIdNo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dgvName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dgvGender = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dgvPhone = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -64,7 +64,7 @@
             this.DataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             this.DataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dgvId,
-            this.dvgsIDNo,
+            this.dgvIdNo,
             this.dgvName,
             this.dgvGender,
             this.dgvPhone,
@@ -112,43 +112,43 @@
             // 
             // dgvId
             // 
-            this.dgvId.FillWeight = 67.58887F;
+            this.dgvId.FillWeight = 31.95152F;
             this.dgvId.HeaderText = "No.";
-            this.dgvId.MinimumWidth = 30;
             this.dgvId.Name = "dgvId";
             this.dgvId.ReadOnly = true;
             // 
-            // dvgsIDNo
+            // dgvIdNo
             // 
-            this.dvgsIDNo.FillWeight = 30.02921F;
-            this.dvgsIDNo.HeaderText = "ID";
-            this.dvgsIDNo.Name = "dvgsIDNo";
-            this.dvgsIDNo.ReadOnly = true;
+            this.dgvIdNo.FillWeight = 97.33962F;
+            this.dgvIdNo.HeaderText = "Code";
+            this.dgvIdNo.MinimumWidth = 30;
+            this.dgvIdNo.Name = "dgvIdNo";
+            this.dgvIdNo.ReadOnly = true;
             // 
             // dgvName
             // 
-            this.dgvName.FillWeight = 177.4554F;
+            this.dgvName.FillWeight = 120.9282F;
             this.dgvName.HeaderText = "Name";
             this.dgvName.Name = "dgvName";
             this.dgvName.ReadOnly = true;
             // 
             // dgvGender
             // 
-            this.dgvGender.FillWeight = 22.83323F;
+            this.dgvGender.FillWeight = 46.35848F;
             this.dgvGender.HeaderText = "Gender";
             this.dgvGender.Name = "dgvGender";
             this.dgvGender.ReadOnly = true;
             // 
             // dgvPhone
             // 
-            this.dgvPhone.FillWeight = 68.38459F;
+            this.dgvPhone.FillWeight = 88.61919F;
             this.dgvPhone.HeaderText = "Phone";
             this.dgvPhone.Name = "dgvPhone";
             this.dgvPhone.ReadOnly = true;
             // 
             // dgvEmail
             // 
-            this.dgvEmail.FillWeight = 172.5793F;
+            this.dgvEmail.FillWeight = 223.6445F;
             this.dgvEmail.HeaderText = "Email";
             this.dgvEmail.Name = "dgvEmail";
             this.dgvEmail.ReadOnly = true;
@@ -172,7 +172,7 @@
 
         private Guna.UI2.WinForms.Guna2DataGridView DataGridView;
         private System.Windows.Forms.DataGridViewTextBoxColumn dgvId;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dvgsIDNo;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dgvIdNo;
         private System.Windows.Forms.DataGridViewTextBoxColumn dgvName;
         private System.Windows.Forms.DataGridViewTextBoxColumn dgvGender;
         private System.Windows.Forms.DataGridViewTextBoxColumn dgvPhone;

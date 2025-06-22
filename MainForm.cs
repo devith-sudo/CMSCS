@@ -10,7 +10,6 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-
 namespace SchoolManagementSystem
 {
     public partial class MainForm : Sample
@@ -42,6 +41,7 @@ namespace SchoolManagementSystem
             switch (path)
             {
                 case "Dashboard":
+                    AddControls(new Dashboard());
                     break;
 
                 case "Admission Management.Admin Student":
@@ -68,7 +68,8 @@ namespace SchoolManagementSystem
                     //AddControls();
                     break;
 
-                case "Classes.Manage Class":
+                case "Classes.Manage Classes":
+                    AddControls(new ClassView());
                     break;
 
                 case "Classes.Class Subjects":

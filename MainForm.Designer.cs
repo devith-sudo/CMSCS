@@ -32,13 +32,13 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.navigtionMenu = new Kimtoo.NavigtionMenu();
             this.topPanel = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.Logo = new Guna.UI2.WinForms.Guna2PictureBox();
             this.btnMin = new Guna.UI2.WinForms.Guna2ControlBox();
             this.btnMax = new Guna.UI2.WinForms.Guna2ControlBox();
             this.btnExit = new Guna.UI2.WinForms.Guna2ControlBox();
             this.ControlsPanel = new System.Windows.Forms.Panel();
             this.guna2DragControl1 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
-            this.Logo = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.label1 = new System.Windows.Forms.Label();
             this.topPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Logo)).BeginInit();
             this.SuspendLayout();
@@ -101,6 +101,29 @@
             this.topPanel.Size = new System.Drawing.Size(1148, 72);
             this.topPanel.TabIndex = 2;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label1.Location = new System.Drawing.Point(68, 28);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(192, 22);
+            this.label1.TabIndex = 7;
+            this.label1.Text = "Code Hunter School";
+            // 
+            // Logo
+            // 
+            this.Logo.BorderRadius = 8;
+            this.Logo.Image = ((System.Drawing.Image)(resources.GetObject("Logo.Image")));
+            this.Logo.ImageRotate = 0F;
+            this.Logo.Location = new System.Drawing.Point(12, 12);
+            this.Logo.Name = "Logo";
+            this.Logo.Size = new System.Drawing.Size(50, 50);
+            this.Logo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.Logo.TabIndex = 6;
+            this.Logo.TabStop = false;
+            // 
             // btnMin
             // 
             this.btnMin.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -151,29 +174,6 @@
             this.guna2DragControl1.DockIndicatorTransparencyValue = 0.6D;
             this.guna2DragControl1.TargetControl = this.topPanel;
             this.guna2DragControl1.UseTransparentDrag = true;
-            // 
-            // Logo
-            // 
-            this.Logo.BorderRadius = 8;
-            this.Logo.Image = ((System.Drawing.Image)(resources.GetObject("Logo.Image")));
-            this.Logo.ImageRotate = 0F;
-            this.Logo.Location = new System.Drawing.Point(12, 12);
-            this.Logo.Name = "Logo";
-            this.Logo.Size = new System.Drawing.Size(50, 50);
-            this.Logo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.Logo.TabIndex = 6;
-            this.Logo.TabStop = false;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label1.Location = new System.Drawing.Point(68, 28);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(192, 22);
-            this.label1.TabIndex = 7;
-            this.label1.Text = "Code Hunter School";
             // 
             // MainForm
             // 

@@ -102,6 +102,48 @@
     <Compile Include="MainForm.Designer.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Model\ClassAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Model\ClassAdd.Designer.cs">
+      <DependentUpon>ClassAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Model\ClassSubjectAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Model\ClassSubjectAdd.Designer.cs">
+      <DependentUpon>ClassSubjectAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Model\ExamGradeAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Model\ExamGradeAdd.Designer.cs">
+      <DependentUpon>ExamGradeAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Model\ExamMarkAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Model\ExamMarkAdd.Designer.cs">
+      <DependentUpon>ExamMarkAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Model\FeePayment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Model\FeePayment.Designer.cs">
+      <DependentUpon>FeePayment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Model\FeeVoucher.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Model\FeeVoucher.Designer.cs">
+      <DependentUpon>FeeVoucher.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Model\ParentAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Model\ParentAdd.Designer.cs">
+      <DependentUpon>ParentAdd.cs</DependentUpon>
+    </Compile>
     <Compile Include="Model\School.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -114,11 +156,35 @@
     <Compile Include="Model\StaffAdd.Designer.cs">
       <DependentUpon>StaffAdd.cs</DependentUpon>
     </Compile>
+    <Compile Include="Model\StaffAttendanceAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Model\StaffAttendanceAdd.Designer.cs">
+      <DependentUpon>StaffAttendanceAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Model\StudentAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Model\StudentAdd.Designer.cs">
+      <DependentUpon>StudentAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Model\StudentAttendanceAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Model\StudentAttendanceAdd.Designer.cs">
+      <DependentUpon>StudentAttendanceAdd.cs</DependentUpon>
+    </Compile>
     <Compile Include="Model\SubjectAdd.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Model\SubjectAdd.Designer.cs">
       <DependentUpon>SubjectAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Model\TermAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Model\TermAdd.Designer.cs">
+      <DependentUpon>TermAdd.cs</DependentUpon>
     </Compile>
     <Compile Include="Model\UserAdd.cs">
       <SubType>Form</SubType>
@@ -134,29 +200,23 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SampleAdd.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="SampleAdd.Designer.cs">
-      <DependentUpon>SampleAdd.cs</DependentUpon>
-    </Compile>
     <Compile Include="SampleView.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="SampleView.Designer.cs">
       <DependentUpon>SampleView.cs</DependentUpon>
     </Compile>
-    <Compile Include="SchoolInfo.cs">
+    <Compile Include="Views\ClassSubjectView.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="SchoolInfo.Designer.cs">
-      <DependentUpon>SchoolInfo.cs</DependentUpon>
+    <Compile Include="Views\ClassSubjectView.Designer.cs">
+      <DependentUpon>ClassSubjectView.cs</DependentUpon>
     </Compile>
-    <Compile Include="Testing.cs">
+    <Compile Include="Views\ClassView.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Testing.Designer.cs">
-      <DependentUpon>Testing.cs</DependentUpon>
+    <Compile Include="Views\ClassView.Designer.cs">
+      <DependentUpon>ClassView.cs</DependentUpon>
     </Compile>
     <Compile Include="Views\Dashboard.cs">
       <SubType>Form</SubType>
@@ -164,17 +224,47 @@
     <Compile Include="Views\Dashboard.Designer.cs">
       <DependentUpon>Dashboard.cs</DependentUpon>
     </Compile>
+    <Compile Include="Views\ExamGradeView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\ExamGradeView.Designer.cs">
+      <DependentUpon>ExamGradeView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ExamMarkView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\ExamMarkView.Designer.cs">
+      <DependentUpon>ExamMarkView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ParentView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\ParentView.Designer.cs">
+      <DependentUpon>ParentView.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\Reports.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Views\Reports.Designer.cs">
       <DependentUpon>Reports.cs</DependentUpon>
     </Compile>
+    <Compile Include="Views\StaffAttendenceView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\StaffAttendenceView.Designer.cs">
+      <DependentUpon>StaffAttendenceView.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\StaffView.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Views\StaffView.Designer.cs">
       <DependentUpon>StaffView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\StudentAttendenceView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\StudentAttendenceView.Designer.cs">
+      <DependentUpon>StudentAttendenceView.cs</DependentUpon>
     </Compile>
     <Compile Include="Views\StudentView.cs">
       <SubType>Form</SubType>
@@ -196,6 +286,9 @@
     </Compile>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Model\ClassAdd.resx">
+      <DependentUpon>ClassAdd.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Model\School.resx">
       <DependentUpon>School.cs</DependentUpon>
@@ -221,23 +314,23 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="SampleAdd.resx">
-      <DependentUpon>SampleAdd.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="SampleView.resx">
       <DependentUpon>SampleView.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="SchoolInfo.resx">
-      <DependentUpon>SchoolInfo.cs</DependentUpon>
+    <EmbeddedResource Include="Views\ClassView.resx">
+      <DependentUpon>ClassView.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Testing.resx">
-      <DependentUpon>Testing.cs</DependentUpon>
+    <EmbeddedResource Include="Views\Dashboard.resx">
+      <DependentUpon>Dashboard.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\Reports.resx">
       <DependentUpon>Reports.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\StaffView.resx">
       <DependentUpon>StaffView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\StudentView.resx">
+      <DependentUpon>StudentView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\Subjectview.resx">
       <DependentUpon>Subjectview.cs</DependentUpon>

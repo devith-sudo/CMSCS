@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace SchoolManagementSystem
+namespace SchoolManagementSystem.Views
 {
-    public partial class SchoolInfo : Form
+    public partial class StaffAttendenceView : SampleView
     {
-        public SchoolInfo()
+        public StaffAttendenceView()
         {
             InitializeComponent();
         }

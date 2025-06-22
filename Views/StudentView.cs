@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SchoolManagementSystem.Model;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,12 @@ namespace SchoolManagementSystem.Views
         public StudentView()
         {
             InitializeComponent();
+        }
+        public override void btnSave_Click(object sender, EventArgs e)
+        {
+            UserAdd userAdd = new UserAdd();
+            userAdd.Show();
+            userAdd.StartPosition = FormStartPosition.CenterScreen;
         }
     }
 }

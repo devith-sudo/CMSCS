@@ -245,7 +245,7 @@
             this.txtPhone.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtPhone.Name = "txtPhone";
             this.txtPhone.PasswordChar = '\0';
-            this.txtPhone.PlaceholderText = "";
+            this.txtPhone.PlaceholderText = "Enter Your Phone";
             this.txtPhone.SelectedText = "";
             this.txtPhone.Size = new System.Drawing.Size(217, 36);
             this.txtPhone.TabIndex = 23;
@@ -270,7 +270,7 @@
             this.txtDOB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtDOB.Name = "txtDOB";
             this.txtDOB.PasswordChar = '\0';
-            this.txtDOB.PlaceholderText = "";
+            this.txtDOB.PlaceholderText = "dd-MM-yyyy";
             this.txtDOB.SelectedText = "";
             this.txtDOB.Size = new System.Drawing.Size(201, 36);
             this.txtDOB.TabIndex = 21;
@@ -318,7 +318,7 @@
             this.txtName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtName.Name = "txtName";
             this.txtName.PasswordChar = '\0';
-            this.txtName.PlaceholderText = "";
+            this.txtName.PlaceholderText = "Enter Your Name";
             this.txtName.SelectedText = "";
             this.txtName.Size = new System.Drawing.Size(347, 36);
             this.txtName.TabIndex = 17;
@@ -340,15 +340,17 @@
             this.btnBrowse.Size = new System.Drawing.Size(222, 45);
             this.btnBrowse.TabIndex = 7;
             this.btnBrowse.Text = "Browse";
+            this.btnBrowse.Click += new System.EventHandler(this.btnBrowse_Click);
             // 
             // pictureBox
             // 
             this.pictureBox.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox.BorderRadius = 15;
-            this.pictureBox.ImageRotate = 50F;
+            this.pictureBox.ImageRotate = 0F;
             this.pictureBox.Location = new System.Drawing.Point(525, 118);
             this.pictureBox.Name = "pictureBox";
             this.pictureBox.Size = new System.Drawing.Size(222, 246);
+            this.pictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox.TabIndex = 26;
             this.pictureBox.TabStop = false;
             // 
@@ -383,7 +385,7 @@
             this.txtID.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtID.Name = "txtID";
             this.txtID.PasswordChar = '\0';
-            this.txtID.PlaceholderText = "";
+            this.txtID.PlaceholderText = "Staff ID";
             this.txtID.SelectedText = "";
             this.txtID.Size = new System.Drawing.Size(83, 36);
             this.txtID.TabIndex = 28;
@@ -408,6 +410,7 @@
             this.ComboBoxGender.Location = new System.Drawing.Point(53, 294);
             this.ComboBoxGender.Name = "ComboBoxGender";
             this.ComboBoxGender.Size = new System.Drawing.Size(182, 36);
+            this.ComboBoxGender.StartIndex = 0;
             this.ComboBoxGender.TabIndex = 30;
             // 
             // label8
@@ -452,7 +455,7 @@
             this.txtEmail.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.PasswordChar = '\0';
-            this.txtEmail.PlaceholderText = "";
+            this.txtEmail.PlaceholderText = "Enter Your Email";
             this.txtEmail.SelectedText = "";
             this.txtEmail.Size = new System.Drawing.Size(247, 36);
             this.txtEmail.TabIndex = 32;
@@ -488,7 +491,7 @@
             this.txtAddress.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtAddress.Name = "txtAddress";
             this.txtAddress.PasswordChar = '\0';
-            this.txtAddress.PlaceholderText = "";
+            this.txtAddress.PlaceholderText = "Enter Your Address";
             this.txtAddress.SelectedText = "";
             this.txtAddress.Size = new System.Drawing.Size(694, 36);
             this.txtAddress.TabIndex = 34;
@@ -524,7 +527,7 @@
             this.txtSalary.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtSalary.Name = "txtSalary";
             this.txtSalary.PasswordChar = '\0';
-            this.txtSalary.PlaceholderText = "";
+            this.txtSalary.PlaceholderText = "Enter Your Salary";
             this.txtSalary.SelectedText = "";
             this.txtSalary.Size = new System.Drawing.Size(268, 36);
             this.txtSalary.TabIndex = 36;
@@ -558,6 +561,7 @@
             this.Controls.Add(this.txtName);
             this.Name = "StaffAdd";
             this.Text = "";
+            this.Load += new System.EventHandler(this.StaffAdd_Load);
             this.TopPanel.ResumeLayout(false);
             this.TopPanel.PerformLayout();
             this.ButtonPanel.ResumeLayout(false);

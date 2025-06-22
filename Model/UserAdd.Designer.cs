@@ -41,9 +41,9 @@
             this.label2 = new System.Windows.Forms.Label();
             this.txtName = new Guna.UI2.WinForms.Guna2TextBox();
             this.DragControl = new Guna.UI2.WinForms.Guna2DragControl(this.components);
-            this.btnExit = new Guna.UI2.WinForms.Guna2ControlBox();
-            this.label1 = new System.Windows.Forms.Label();
             this.TopPanel = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.btnExit = new Guna.UI2.WinForms.Guna2ControlBox();
             this.btnSave = new Guna.UI2.WinForms.Guna2Button();
             this.btnClose = new Guna.UI2.WinForms.Guna2Button();
             this.btnDelete = new Guna.UI2.WinForms.Guna2Button();
@@ -81,6 +81,7 @@
             this.ComboBoxStatus.Location = new System.Drawing.Point(50, 304);
             this.ComboBoxStatus.Name = "ComboBoxStatus";
             this.ComboBoxStatus.Size = new System.Drawing.Size(296, 36);
+            this.ComboBoxStatus.StartIndex = 0;
             this.ComboBoxStatus.TabIndex = 13;
             // 
             // label6
@@ -114,7 +115,7 @@
             this.txtUsername.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtUsername.Name = "txtUsername";
             this.txtUsername.PasswordChar = '\0';
-            this.txtUsername.PlaceholderText = "";
+            this.txtUsername.PlaceholderText = "Enter Username";
             this.txtUsername.SelectedText = "";
             this.txtUsername.Size = new System.Drawing.Size(295, 36);
             this.txtUsername.TabIndex = 8;
@@ -150,7 +151,7 @@
             this.txtPhone.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtPhone.Name = "txtPhone";
             this.txtPhone.PasswordChar = '\0';
-            this.txtPhone.PlaceholderText = "";
+            this.txtPhone.PlaceholderText = "Enter Your Phone";
             this.txtPhone.SelectedText = "";
             this.txtPhone.Size = new System.Drawing.Size(295, 36);
             this.txtPhone.TabIndex = 10;
@@ -186,7 +187,7 @@
             this.txtPassword.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.PasswordChar = '*';
-            this.txtPassword.PlaceholderText = "";
+            this.txtPassword.PlaceholderText = "Enter Your Password";
             this.txtPassword.SelectedText = "";
             this.txtPassword.Size = new System.Drawing.Size(295, 36);
             this.txtPassword.TabIndex = 6;
@@ -233,7 +234,7 @@
             this.txtName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtName.Name = "txtName";
             this.txtName.PasswordChar = '\0';
-            this.txtName.PlaceholderText = "";
+            this.txtName.PlaceholderText = "Enter Your Name";
             this.txtName.SelectedText = "";
             this.txtName.Size = new System.Drawing.Size(295, 36);
             this.txtName.TabIndex = 4;
@@ -244,16 +245,16 @@
             this.DragControl.TargetControl = this.TopPanel;
             this.DragControl.UseTransparentDrag = true;
             // 
-            // btnExit
+            // TopPanel
             // 
-            this.btnExit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnExit.BorderRadius = 4;
-            this.btnExit.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(152)))), ((int)(((byte)(166)))));
-            this.btnExit.IconColor = System.Drawing.Color.White;
-            this.btnExit.Location = new System.Drawing.Point(743, 12);
-            this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(45, 29);
-            this.btnExit.TabIndex = 2;
+            this.TopPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(41)))), ((int)(((byte)(74)))));
+            this.TopPanel.Controls.Add(this.label1);
+            this.TopPanel.Controls.Add(this.btnExit);
+            this.TopPanel.Dock = System.Windows.Forms.DockStyle.Top;
+            this.TopPanel.Location = new System.Drawing.Point(0, 0);
+            this.TopPanel.Name = "TopPanel";
+            this.TopPanel.Size = new System.Drawing.Size(800, 69);
+            this.TopPanel.TabIndex = 2;
             // 
             // label1
             // 
@@ -266,16 +267,16 @@
             this.label1.TabIndex = 3;
             this.label1.Text = "User Detail";
             // 
-            // TopPanel
+            // btnExit
             // 
-            this.TopPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(41)))), ((int)(((byte)(74)))));
-            this.TopPanel.Controls.Add(this.label1);
-            this.TopPanel.Controls.Add(this.btnExit);
-            this.TopPanel.Dock = System.Windows.Forms.DockStyle.Top;
-            this.TopPanel.Location = new System.Drawing.Point(0, 0);
-            this.TopPanel.Name = "TopPanel";
-            this.TopPanel.Size = new System.Drawing.Size(800, 69);
-            this.TopPanel.TabIndex = 2;
+            this.btnExit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnExit.BorderRadius = 4;
+            this.btnExit.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(152)))), ((int)(((byte)(166)))));
+            this.btnExit.IconColor = System.Drawing.Color.White;
+            this.btnExit.Location = new System.Drawing.Point(743, 12);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.Size = new System.Drawing.Size(45, 29);
+            this.btnExit.TabIndex = 2;
             // 
             // btnSave
             // 

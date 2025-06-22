@@ -183,7 +183,7 @@
             this.txtName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtName.Name = "txtName";
             this.txtName.PasswordChar = '\0';
-            this.txtName.PlaceholderText = "";
+            this.txtName.PlaceholderText = "Enter Subject Name";
             this.txtName.SelectedText = "";
             this.txtName.Size = new System.Drawing.Size(497, 36);
             this.txtName.TabIndex = 17;

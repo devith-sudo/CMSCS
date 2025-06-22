@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace SchoolManagementSystem.Views
 {
-    public partial class Dashboard : Form
+    public partial class Dashboard : Sample
     {
         public Dashboard()
         {

@@ -37,26 +37,26 @@ namespace SchoolManagementSystem.Views
         }
         private void LoadData()
         {
-            string qry = "Select * from tblStaff where sName like '%" + txtSearch.Text + "%' order by sName ASC";
+            string qry = "SELECT staffID, sIDNo, sName, sGender, sPhone, sEmail FROM tblStaff WHERE sName LIKE '%" + txtSearch.Text + "%' ORDER BY sName ASC";
             ListBox lb = new ListBox();
             lb.Items.Add(dgvId);
+            lb.Items.Add(dgvIdNo);
             lb.Items.Add(dgvName);
             lb.Items.Add(dgvGender);
             lb.Items.Add(dgvPhone);
             lb.Items.Add(dgvEmail);
-            lb.Items.Add(dgvId);
             MainClass.loadData(qry, DataGridView, lb);
         }
 
         private void DataGridView_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
             int id = Convert.ToInt32(DataGridView.CurrentRow.Cells["dgvId"].Value);
-            UserAdd userAdd = new UserAdd();
-            userAdd.id = id;
-            userAdd.ShowDialog();
+            StaffAdd staffAdd = new StaffAdd();
+            staffAdd.id = id;
+            staffAdd.ShowDialog();
             LoadData();
         }
-
+                            
         private void DataGridView_CellFormatting(object sender, DataGridViewCellFormattingEventArgs e)
         {
 

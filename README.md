@@ -1,1 +1,3 @@
 "# CMSCS" 
+School Management System
+
