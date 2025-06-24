@@ -86,6 +86,12 @@ namespace SchoolManagementSystem.Model
             }
         }
         #endregion
+
         #endregion
+
+        private void txtPassword_IconRightClick(object sender, EventArgs e)
+        {
+            txtPassword.PasswordChar = txtPassword.PasswordChar == '\0' ? '*' : '\0';
+        }
     }
 }

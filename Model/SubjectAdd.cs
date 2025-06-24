@@ -72,10 +72,16 @@ namespace SchoolManagementSystem.Model
             int r = MainClass.data_insert_update_delete(qry, ht);
             if (r > 0)
             {
-                MessageBox.Show("Save Successfully");
+                MessageBox.Show(
+                    "Data has been saved successfully!",
+                    "Success",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Information
+                );
                 MainClass.Enable_Reset(this);
                 id = 0;
             }
+
         }
         #endregion
         #endregion

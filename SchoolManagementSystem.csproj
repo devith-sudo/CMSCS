@@ -66,7 +66,9 @@
     <Reference Include="OpenHtmlToPdf, Version=1.12.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>packages\OpenHtmlToPdf.1.12.0.0\lib\net45\OpenHtmlToPdf.dll</HintPath>
     </Reference>
-    <Reference Include="System" />
+    <Reference Include="System">
+      <HintPath>C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.dll</HintPath>
+    </Reference>
     <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
     </Reference>
@@ -84,6 +86,7 @@
       <HintPath>packages\System.Runtime.CompilerServices.Unsafe.4.5.3\lib\net461\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
     </Reference>
     <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -95,6 +98,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
     <Compile Include="MainClass.cs" />
     <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
@@ -125,6 +134,18 @@
     </Compile>
     <Compile Include="Model\ExamMarkAdd.Designer.cs">
       <DependentUpon>ExamMarkAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Model\ExpenseAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Model\ExpenseAdd.Designer.cs">
+      <DependentUpon>ExpenseAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Model\ExpenseCategoryAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Model\ExpenseCategoryAdd.Designer.cs">
+      <DependentUpon>ExpenseCategoryAdd.cs</DependentUpon>
     </Compile>
     <Compile Include="Model\FeePayment.cs">
       <SubType>Form</SubType>
@@ -174,6 +195,12 @@
     <Compile Include="Model\StudentAttendanceAdd.Designer.cs">
       <DependentUpon>StudentAttendanceAdd.cs</DependentUpon>
     </Compile>
+    <Compile Include="Model\StudentPromotion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Model\StudentPromotion.Designer.cs">
+      <DependentUpon>StudentPromotion.cs</DependentUpon>
+    </Compile>
     <Compile Include="Model\SubjectAdd.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -192,6 +219,7 @@
     <Compile Include="Model\UserAdd.Designer.cs">
       <DependentUpon>UserAdd.cs</DependentUpon>
     </Compile>
+    <Compile Include="QueryClass.cs" />
     <Compile Include="Sample.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -205,6 +233,14 @@
     </Compile>
     <Compile Include="SampleView.Designer.cs">
       <DependentUpon>SampleView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SchoolDataSet.cs">
+      <DependentUpon>SchoolDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SchoolDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SchoolDataSet.xsd</DependentUpon>
     </Compile>
     <Compile Include="Views\ClassSubjectView.cs">
       <SubType>Form</SubType>
@@ -248,11 +284,11 @@
     <Compile Include="Views\Reports.Designer.cs">
       <DependentUpon>Reports.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\StaffAttendenceView.cs">
+    <Compile Include="Views\StaffAttendanceView.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Views\StaffAttendenceView.Designer.cs">
-      <DependentUpon>StaffAttendenceView.cs</DependentUpon>
+    <Compile Include="Views\StaffAttendanceView.Designer.cs">
+      <DependentUpon>StaffAttendanceView.cs</DependentUpon>
     </Compile>
     <Compile Include="Views\StaffView.cs">
       <SubType>Form</SubType>
@@ -260,11 +296,11 @@
     <Compile Include="Views\StaffView.Designer.cs">
       <DependentUpon>StaffView.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\StudentAttendenceView.cs">
+    <Compile Include="Views\StudentAttendanceView.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Views\StudentAttendenceView.Designer.cs">
-      <DependentUpon>StudentAttendenceView.cs</DependentUpon>
+    <Compile Include="Views\StudentAttendanceView.Designer.cs">
+      <DependentUpon>StudentAttendanceView.cs</DependentUpon>
     </Compile>
     <Compile Include="Views\StudentView.cs">
       <SubType>Form</SubType>
@@ -284,11 +320,32 @@
     <Compile Include="Views\UserView.Designer.cs">
       <DependentUpon>UserView.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Model\ClassAdd.resx">
       <DependentUpon>ClassAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Model\ClassSubjectAdd.resx">
+      <DependentUpon>ClassSubjectAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Model\ExamGradeAdd.resx">
+      <DependentUpon>ExamGradeAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Model\ExpenseAdd.resx">
+      <DependentUpon>ExpenseAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Model\ExpenseCategoryAdd.resx">
+      <DependentUpon>ExpenseCategoryAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Model\FeeVoucher.resx">
+      <DependentUpon>FeeVoucher.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Model\ParentAdd.resx">
+      <DependentUpon>ParentAdd.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Model\School.resx">
       <DependentUpon>School.cs</DependentUpon>
@@ -296,8 +353,20 @@
     <EmbeddedResource Include="Model\StaffAdd.resx">
       <DependentUpon>StaffAdd.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Model\StaffAttendanceAdd.resx">
+      <DependentUpon>StaffAttendanceAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Model\StudentAdd.resx">
+      <DependentUpon>StudentAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Model\StudentAttendanceAdd.resx">
+      <DependentUpon>StudentAttendanceAdd.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Model\SubjectAdd.resx">
       <DependentUpon>SubjectAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Model\TermAdd.resx">
+      <DependentUpon>TermAdd.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Model\UserAdd.resx">
       <DependentUpon>UserAdd.cs</DependentUpon>
@@ -317,17 +386,32 @@
     <EmbeddedResource Include="SampleView.resx">
       <DependentUpon>SampleView.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Views\ClassSubjectView.resx">
+      <DependentUpon>ClassSubjectView.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Views\ClassView.resx">
       <DependentUpon>ClassView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\Dashboard.resx">
       <DependentUpon>Dashboard.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Views\ExamGradeView.resx">
+      <DependentUpon>ExamGradeView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\ParentView.resx">
+      <DependentUpon>ParentView.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Views\Reports.resx">
       <DependentUpon>Reports.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Views\StaffAttendanceView.resx">
+      <DependentUpon>StaffAttendanceView.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Views\StaffView.resx">
       <DependentUpon>StaffView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\StudentAttendanceView.resx">
+      <DependentUpon>StudentAttendanceView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\StudentView.resx">
       <DependentUpon>StudentView.cs</DependentUpon>
@@ -348,10 +432,23 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="SchoolDataSet.xsc">
+      <DependentUpon>SchoolDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="SchoolDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SchoolDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SchoolDataSet.xss">
+      <DependentUpon>SchoolDataSet.xsd</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Icon\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

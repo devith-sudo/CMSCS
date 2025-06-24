@@ -77,8 +77,7 @@
         ((Kimtoo.ButtonItem)(resources.GetObject("navigtionMenu.Items10"))),
         ((Kimtoo.ButtonItem)(resources.GetObject("navigtionMenu.Items11"))),
         ((Kimtoo.ButtonItem)(resources.GetObject("navigtionMenu.Items12"))),
-        ((Kimtoo.ButtonItem)(resources.GetObject("navigtionMenu.Items13"))),
-        ((Kimtoo.ButtonItem)(resources.GetObject("navigtionMenu.Items14")))};
+        ((Kimtoo.ButtonItem)(resources.GetObject("navigtionMenu.Items13")))};
             this.navigtionMenu.ItemTextMargin = 8;
             this.navigtionMenu.Location = new System.Drawing.Point(0, 70);
             this.navigtionMenu.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);

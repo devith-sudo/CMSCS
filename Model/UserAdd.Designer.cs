@@ -78,7 +78,7 @@
             this.ComboBoxStatus.Items.AddRange(new object[] {
             "Active",
             "Inactive"});
-            this.ComboBoxStatus.Location = new System.Drawing.Point(50, 304);
+            this.ComboBoxStatus.Location = new System.Drawing.Point(50, 291);
             this.ComboBoxStatus.Name = "ComboBoxStatus";
             this.ComboBoxStatus.Size = new System.Drawing.Size(296, 36);
             this.ComboBoxStatus.StartIndex = 0;
@@ -183,6 +183,7 @@
             this.txtPassword.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPassword.ForeColor = System.Drawing.Color.White;
             this.txtPassword.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtPassword.IconRightOffset = new System.Drawing.Point(10, 0);
             this.txtPassword.Location = new System.Drawing.Point(51, 201);
             this.txtPassword.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtPassword.Name = "txtPassword";
@@ -191,6 +192,7 @@
             this.txtPassword.SelectedText = "";
             this.txtPassword.Size = new System.Drawing.Size(295, 36);
             this.txtPassword.TabIndex = 6;
+            this.txtPassword.IconRightClick += new System.EventHandler(this.txtPassword_IconRightClick);
             // 
             // label3
             // 
@@ -318,9 +320,7 @@
             // 
             // btnDelete
             // 
-            this.btnDelete.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnDelete.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnDelete.Animated = true;
             this.btnDelete.AutoRoundedCorners = true;
             this.btnDelete.BorderRadius = 21;
@@ -345,7 +345,7 @@
             this.ButtonPanel.Controls.Add(this.btnClose);
             this.ButtonPanel.Controls.Add(this.btnSave);
             this.ButtonPanel.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.ButtonPanel.Location = new System.Drawing.Point(0, 380);
+            this.ButtonPanel.Location = new System.Drawing.Point(0, 351);
             this.ButtonPanel.Name = "ButtonPanel";
             this.ButtonPanel.Size = new System.Drawing.Size(800, 70);
             this.ButtonPanel.TabIndex = 3;
@@ -354,7 +354,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(800, 421);
             this.Controls.Add(this.ComboBoxStatus);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label4);

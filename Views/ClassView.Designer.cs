@@ -32,9 +32,10 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.DataGridView = new Guna.UI2.WinForms.Guna2DataGridView();
-            this.subjectID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgvName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgvTeacher = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgvSr = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgvID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgvClassName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgvTeacherName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.DataGridView)).BeginInit();
             this.SuspendLayout();
             // 
@@ -60,9 +61,10 @@
             this.DataGridView.ColumnHeadersHeight = 30;
             this.DataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             this.DataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.subjectID,
-            this.dgvName,
-            this.dgvTeacher});
+            this.dgvSr,
+            this.dgvID,
+            this.dgvClassName,
+            this.dgvTeacherName});
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(220)))), ((int)(((byte)(239)))));
             dataGridViewCellStyle3.Font = new System.Drawing.Font("Arial Rounded MT Bold", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -101,27 +103,36 @@
             this.DataGridView.ThemeStyle.RowsStyle.Height = 22;
             this.DataGridView.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(139)))), ((int)(((byte)(205)))));
             this.DataGridView.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.Silver;
+            this.DataGridView.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DataGridView_CellDoubleClick);
+            this.DataGridView.CellFormatting += new System.Windows.Forms.DataGridViewCellFormattingEventHandler(this.DataGridView_CellFormatting);
             // 
-            // subjectID
+            // dgvSr
             // 
-            this.subjectID.FillWeight = 31.79932F;
-            this.subjectID.HeaderText = "No.";
-            this.subjectID.MinimumWidth = 30;
-            this.subjectID.Name = "subjectID";
-            this.subjectID.ReadOnly = true;
+            this.dgvSr.HeaderText = "No.";
+            this.dgvSr.Name = "dgvSr";
+            this.dgvSr.ReadOnly = true;
             // 
-            // dgvName
+            // dgvID
             // 
-            this.dgvName.FillWeight = 124.8124F;
-            this.dgvName.HeaderText = "Class Name";
-            this.dgvName.Name = "dgvName";
-            this.dgvName.ReadOnly = true;
+            this.dgvID.FillWeight = 31.79932F;
+            this.dgvID.HeaderText = "ID";
+            this.dgvID.MinimumWidth = 30;
+            this.dgvID.Name = "dgvID";
+            this.dgvID.ReadOnly = true;
+            this.dgvID.Visible = false;
             // 
-            // dgvTeacher
+            // dgvClassName
             // 
-            this.dgvTeacher.HeaderText = "Teacher Name";
-            this.dgvTeacher.Name = "dgvTeacher";
-            this.dgvTeacher.ReadOnly = true;
+            this.dgvClassName.FillWeight = 124.8124F;
+            this.dgvClassName.HeaderText = "Class Name";
+            this.dgvClassName.Name = "dgvClassName";
+            this.dgvClassName.ReadOnly = true;
+            // 
+            // dgvTeacherName
+            // 
+            this.dgvTeacherName.HeaderText = "Teacher Name";
+            this.dgvTeacherName.Name = "dgvTeacherName";
+            this.dgvTeacherName.ReadOnly = true;
             // 
             // ClassView
             // 
@@ -131,6 +142,7 @@
             this.Controls.Add(this.DataGridView);
             this.Name = "ClassView";
             this.Text = "ClassView";
+            this.Load += new System.EventHandler(this.ClassView_Load);
             this.Controls.SetChildIndex(this.DataGridView, 0);
             ((System.ComponentModel.ISupportInitialize)(this.DataGridView)).EndInit();
             this.ResumeLayout(false);
@@ -140,8 +152,9 @@
         #endregion
 
         private Guna.UI2.WinForms.Guna2DataGridView DataGridView;
-        private System.Windows.Forms.DataGridViewTextBoxColumn subjectID;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dgvName;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dgvTeacher;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dgvSr;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dgvID;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dgvClassName;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dgvTeacherName;
     }
 }

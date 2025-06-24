@@ -59,7 +59,7 @@ namespace SchoolManagementSystem.Views
                             
         private void DataGridView_CellFormatting(object sender, DataGridViewCellFormattingEventArgs e)
         {
-
+            MainClass.SrNo(DataGridView);
         }
 
     }

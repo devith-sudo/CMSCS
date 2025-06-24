@@ -29,9 +29,8 @@
         private void InitializeComponent()
         {
             this.label5 = new System.Windows.Forms.Label();
-            this.txtUsername = new Guna.UI2.WinForms.Guna2TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.txtName = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtClassName = new Guna.UI2.WinForms.Guna2TextBox();
             this.TopPanel = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.btnExit = new Guna.UI2.WinForms.Guna2ControlBox();
@@ -39,6 +38,7 @@
             this.btnClose = new Guna.UI2.WinForms.Guna2Button();
             this.btnSave = new Guna.UI2.WinForms.Guna2Button();
             this.ButtonPanel = new System.Windows.Forms.Panel();
+            this.ComboBoxTeacher = new Guna.UI2.WinForms.Guna2ComboBox();
             this.TopPanel.SuspendLayout();
             this.ButtonPanel.SuspendLayout();
             this.SuspendLayout();
@@ -54,31 +54,6 @@
             this.label5.TabIndex = 13;
             this.label5.Text = "Teacher Name";
             // 
-            // txtUsername
-            // 
-            this.txtUsername.AutoRoundedCorners = true;
-            this.txtUsername.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(112)))), ((int)(((byte)(51)))), ((int)(((byte)(255)))));
-            this.txtUsername.BorderRadius = 17;
-            this.txtUsername.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtUsername.DefaultText = "";
-            this.txtUsername.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtUsername.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtUsername.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtUsername.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtUsername.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(41)))), ((int)(((byte)(74)))));
-            this.txtUsername.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtUsername.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtUsername.ForeColor = System.Drawing.Color.White;
-            this.txtUsername.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtUsername.Location = new System.Drawing.Point(51, 197);
-            this.txtUsername.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.txtUsername.Name = "txtUsername";
-            this.txtUsername.PasswordChar = '\0';
-            this.txtUsername.PlaceholderText = "Enter Teacher Name";
-            this.txtUsername.SelectedText = "";
-            this.txtUsername.Size = new System.Drawing.Size(467, 36);
-            this.txtUsername.TabIndex = 14;
-            // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -90,30 +65,30 @@
             this.label2.TabIndex = 11;
             this.label2.Text = "Class Name";
             // 
-            // txtName
+            // txtClassName
             // 
-            this.txtName.AutoRoundedCorners = true;
-            this.txtName.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(112)))), ((int)(((byte)(51)))), ((int)(((byte)(255)))));
-            this.txtName.BorderRadius = 17;
-            this.txtName.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtName.DefaultText = "";
-            this.txtName.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtName.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtName.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtName.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtName.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(41)))), ((int)(((byte)(74)))));
-            this.txtName.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtName.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtName.ForeColor = System.Drawing.Color.White;
-            this.txtName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtName.Location = new System.Drawing.Point(52, 109);
-            this.txtName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.txtName.Name = "txtName";
-            this.txtName.PasswordChar = '\0';
-            this.txtName.PlaceholderText = "Enter Class Name";
-            this.txtName.SelectedText = "";
-            this.txtName.Size = new System.Drawing.Size(466, 36);
-            this.txtName.TabIndex = 12;
+            this.txtClassName.AutoRoundedCorners = true;
+            this.txtClassName.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(112)))), ((int)(((byte)(51)))), ((int)(((byte)(255)))));
+            this.txtClassName.BorderRadius = 17;
+            this.txtClassName.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtClassName.DefaultText = "";
+            this.txtClassName.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtClassName.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtClassName.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtClassName.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtClassName.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(41)))), ((int)(((byte)(74)))));
+            this.txtClassName.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtClassName.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtClassName.ForeColor = System.Drawing.Color.White;
+            this.txtClassName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtClassName.Location = new System.Drawing.Point(52, 109);
+            this.txtClassName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtClassName.Name = "txtClassName";
+            this.txtClassName.PasswordChar = '\0';
+            this.txtClassName.PlaceholderText = "Enter Class Name";
+            this.txtClassName.SelectedText = "";
+            this.txtClassName.Size = new System.Drawing.Size(466, 36);
+            this.txtClassName.TabIndex = 12;
             // 
             // TopPanel
             // 
@@ -166,6 +141,7 @@
             this.btnDelete.Size = new System.Drawing.Size(117, 45);
             this.btnDelete.TabIndex = 6;
             this.btnDelete.Text = "Delete";
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // btnClose
             // 
@@ -184,6 +160,7 @@
             this.btnClose.Size = new System.Drawing.Size(117, 45);
             this.btnClose.TabIndex = 5;
             this.btnClose.Text = "Close";
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
             // btnSave
             // 
@@ -202,6 +179,7 @@
             this.btnSave.Size = new System.Drawing.Size(117, 45);
             this.btnSave.TabIndex = 4;
             this.btnSave.Text = "Save";
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // ButtonPanel
             // 
@@ -215,19 +193,40 @@
             this.ButtonPanel.Size = new System.Drawing.Size(561, 70);
             this.ButtonPanel.TabIndex = 10;
             // 
+            // ComboBoxTeacher
+            // 
+            this.ComboBoxTeacher.AutoRoundedCorners = true;
+            this.ComboBoxTeacher.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(36)))), ((int)(((byte)(66)))));
+            this.ComboBoxTeacher.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(112)))), ((int)(((byte)(51)))), ((int)(((byte)(255)))));
+            this.ComboBoxTeacher.BorderRadius = 17;
+            this.ComboBoxTeacher.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.ComboBoxTeacher.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.ComboBoxTeacher.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(41)))), ((int)(((byte)(74)))));
+            this.ComboBoxTeacher.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.ComboBoxTeacher.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.ComboBoxTeacher.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F);
+            this.ComboBoxTeacher.ForeColor = System.Drawing.Color.White;
+            this.ComboBoxTeacher.ItemHeight = 30;
+            this.ComboBoxTeacher.Location = new System.Drawing.Point(52, 201);
+            this.ComboBoxTeacher.Name = "ComboBoxTeacher";
+            this.ComboBoxTeacher.Size = new System.Drawing.Size(466, 36);
+            this.ComboBoxTeacher.StartIndex = 0;
+            this.ComboBoxTeacher.TabIndex = 14;
+            // 
             // ClassAdd
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(561, 357);
+            this.Controls.Add(this.ComboBoxTeacher);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.txtUsername);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.txtName);
+            this.Controls.Add(this.txtClassName);
             this.Controls.Add(this.TopPanel);
             this.Controls.Add(this.ButtonPanel);
             this.Name = "ClassAdd";
             this.Text = "ClassAdd";
+            this.Load += new System.EventHandler(this.ClassAdd_Load);
             this.TopPanel.ResumeLayout(false);
             this.TopPanel.PerformLayout();
             this.ButtonPanel.ResumeLayout(false);
@@ -239,9 +238,8 @@
         #endregion
 
         public System.Windows.Forms.Label label5;
-        public Guna.UI2.WinForms.Guna2TextBox txtUsername;
         public System.Windows.Forms.Label label2;
-        public Guna.UI2.WinForms.Guna2TextBox txtName;
+        public Guna.UI2.WinForms.Guna2TextBox txtClassName;
         private System.Windows.Forms.Panel TopPanel;
         public System.Windows.Forms.Label label1;
         private Guna.UI2.WinForms.Guna2ControlBox btnExit;
@@ -249,5 +247,6 @@
         public Guna.UI2.WinForms.Guna2Button btnClose;
         public Guna.UI2.WinForms.Guna2Button btnSave;
         private System.Windows.Forms.Panel ButtonPanel;
+        private Guna.UI2.WinForms.Guna2ComboBox ComboBoxTeacher;
     }
 }

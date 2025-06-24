@@ -17,26 +17,9 @@ namespace SchoolManagementSystem.Views
         {
             InitializeComponent();
         }
-        
+
         public int id = 0;
-        #region Subjectview Load
-        private void Subjectview_Load(object sender, EventArgs e)
-        {
-            LoadData();
-        }
-
-        public override void txtSearch_TextChanged(object sender, EventArgs e)
-        {
-            LoadData();
-        }
-
-        public override void btnSave_Click(object sender, EventArgs e)
-        {
-            SubjectAdd subjectAdd = new SubjectAdd();
-            subjectAdd.Show();
-            subjectAdd.StartPosition = FormStartPosition.CenterScreen;
-            LoadData();
-        }
+        #region LoadData
         private void LoadData()
         {
             string qry = "Select * from tblSubject where subjectName like '%" + txtSearch.Text + "%' order by subjectName ASC";
@@ -46,10 +29,33 @@ namespace SchoolManagementSystem.Views
             lb.Items.Add(dgvName);
             MainClass.loadData(qry, DataGridView, lb);
         }
-
         #endregion
 
-        #region
+        #region Subjectview Load
+        private void Subjectview_Load(object sender, EventArgs e)
+        {
+            LoadData();
+        }
+        #endregion
+
+        #region Text Search
+        public override void txtSearch_TextChanged(object sender, EventArgs e)
+        {
+            LoadData();
+        }
+        #endregion
+
+        #region btnSave_Click
+        public override void btnSave_Click(object sender, EventArgs e)
+        {
+            SubjectAdd subjectAdd = new SubjectAdd();
+            subjectAdd.Show();
+            subjectAdd.StartPosition = FormStartPosition.CenterScreen;
+            LoadData();
+        }
+        #endregion
+
+        #region CellDoubleClick
         private void DataGridView_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
             int id = Convert.ToInt32(DataGridView.CurrentRow.Cells["subjectID"].Value);
@@ -60,23 +66,11 @@ namespace SchoolManagementSystem.Views
         }
         #endregion
 
-        #region
+        #region DGV_CellFormatting
+        private void DataGridView_CellFormatting(object sender, DataGridViewCellFormattingEventArgs e)
+        {
+            MainClass.SrNo(DataGridView);
+        }
         #endregion
-
-        #region
-        #endregion
-
-        #region
-        #endregion
-
-        #region
-        #endregion
-
-        #region
-        #endregion
-
-        #region
-        #endregion
-
     }
 }

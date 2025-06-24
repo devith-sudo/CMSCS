@@ -157,6 +157,7 @@ namespace SchoolManagementSystem.Model
             {
                 MessageBox.Show("Error saving data: " + ex.Message);
             }
+            MainClass.Enable_Reset(this);
         }
         #endregion
 

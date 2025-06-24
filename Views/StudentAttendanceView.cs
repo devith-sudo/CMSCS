@@ -10,11 +10,13 @@ using System.Windows.Forms;
 
 namespace SchoolManagementSystem.Views
 {
-    public partial class StaffAttendenceView : SampleView
+    public partial class StudentAttendanceView : SampleView
     {
-        public StaffAttendenceView()
+        public StudentAttendanceView()
         {
             InitializeComponent();
         }
+
+
     }
 }

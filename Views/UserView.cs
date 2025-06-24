@@ -39,14 +39,15 @@ namespace SchoolManagementSystem.Views
         #region LoadData
         private void LoadData()
         {
-            string qry = "Select uName, uUsername, uPhone, uStatus, userID from tblUser where uName like '%" + txtSearch.Text + "%' order by uName ASC";
+            string qry = "Select userID, uName, uUsername, uPhone, uStatus from tblUser where uName like '%" + txtSearch.Text + "%' order by uName ASC";
+            string qry1 = QueryClass.UserView(txtSearch.Text);
             ListBox lb = new ListBox();
+            lb.Items.Add(dgvId);
             lb.Items.Add(dgvName);
             lb.Items.Add(dgvUser);
             lb.Items.Add(dgvPhone);
             lb.Items.Add(dgvStatus);
-            lb.Items.Add(dgvId);
-            MainClass.loadData(qry, DataGridView, lb);
+            MainClass.loadData(qry1, DataGridView, lb);
         }
         #endregion
 
@@ -57,6 +58,11 @@ namespace SchoolManagementSystem.Views
             userAdd.id = id;
             userAdd.ShowDialog();
             LoadData();
+        }
+
+        private void DataGridView_CellFormatting(object sender, DataGridViewCellFormattingEventArgs e)
+        {
+            MainClass.SrNo(DataGridView);
         }
     }
 }
