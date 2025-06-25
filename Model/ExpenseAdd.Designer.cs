@@ -37,7 +37,7 @@
             this.btnExit = new Guna.UI2.WinForms.Guna2ControlBox();
             this.label11 = new System.Windows.Forms.Label();
             this.txtDate = new Guna.UI2.WinForms.Guna2TextBox();
-            this.ComboBoxGender = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.ComboBoxExpenseType = new Guna.UI2.WinForms.Guna2ComboBox();
             this.label8 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.txtDescription = new Guna.UI2.WinForms.Guna2TextBox();
@@ -183,25 +183,24 @@
             this.txtDate.Size = new System.Drawing.Size(201, 36);
             this.txtDate.TabIndex = 62;
             // 
-            // ComboBoxGender
+            // ComboBoxExpenseType
             // 
-            this.ComboBoxGender.AutoRoundedCorners = true;
-            this.ComboBoxGender.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(36)))), ((int)(((byte)(66)))));
-            this.ComboBoxGender.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(112)))), ((int)(((byte)(51)))), ((int)(((byte)(255)))));
-            this.ComboBoxGender.BorderRadius = 17;
-            this.ComboBoxGender.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.ComboBoxGender.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.ComboBoxGender.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(41)))), ((int)(((byte)(74)))));
-            this.ComboBoxGender.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.ComboBoxGender.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.ComboBoxGender.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F);
-            this.ComboBoxGender.ForeColor = System.Drawing.Color.White;
-            this.ComboBoxGender.ItemHeight = 30;
-            this.ComboBoxGender.Location = new System.Drawing.Point(260, 122);
-            this.ComboBoxGender.Name = "ComboBoxGender";
-            this.ComboBoxGender.Size = new System.Drawing.Size(182, 36);
-            this.ComboBoxGender.StartIndex = 0;
-            this.ComboBoxGender.TabIndex = 60;
+            this.ComboBoxExpenseType.AutoRoundedCorners = true;
+            this.ComboBoxExpenseType.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(36)))), ((int)(((byte)(66)))));
+            this.ComboBoxExpenseType.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(112)))), ((int)(((byte)(51)))), ((int)(((byte)(255)))));
+            this.ComboBoxExpenseType.BorderRadius = 17;
+            this.ComboBoxExpenseType.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.ComboBoxExpenseType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.ComboBoxExpenseType.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(41)))), ((int)(((byte)(74)))));
+            this.ComboBoxExpenseType.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.ComboBoxExpenseType.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.ComboBoxExpenseType.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F);
+            this.ComboBoxExpenseType.ForeColor = System.Drawing.Color.White;
+            this.ComboBoxExpenseType.ItemHeight = 30;
+            this.ComboBoxExpenseType.Location = new System.Drawing.Point(260, 122);
+            this.ComboBoxExpenseType.Name = "ComboBoxExpenseType";
+            this.ComboBoxExpenseType.Size = new System.Drawing.Size(182, 36);
+            this.ComboBoxExpenseType.TabIndex = 60;
             // 
             // label8
             // 
@@ -297,12 +296,13 @@
             this.Controls.Add(this.txtDescription);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.txtDate);
-            this.Controls.Add(this.ComboBoxGender);
+            this.Controls.Add(this.ComboBoxExpenseType);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.ButtonPanel);
             this.Controls.Add(this.TopPanel);
             this.Name = "ExpenseAdd";
             this.Text = "ExpenseAdd";
+            this.Load += new System.EventHandler(this.ExpenseAdd_Load);
             this.ButtonPanel.ResumeLayout(false);
             this.TopPanel.ResumeLayout(false);
             this.TopPanel.PerformLayout();
@@ -322,7 +322,7 @@
         private Guna.UI2.WinForms.Guna2ControlBox btnExit;
         public System.Windows.Forms.Label label11;
         public Guna.UI2.WinForms.Guna2TextBox txtDate;
-        private Guna.UI2.WinForms.Guna2ComboBox ComboBoxGender;
+        private Guna.UI2.WinForms.Guna2ComboBox ComboBoxExpenseType;
         public System.Windows.Forms.Label label8;
         public System.Windows.Forms.Label label2;
         public Guna.UI2.WinForms.Guna2TextBox txtDescription;

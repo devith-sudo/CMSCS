@@ -100,6 +100,14 @@ namespace SchoolManagementSystem
                 case "Fee Management.Fee Payment":
                     break;
 
+                case "Expense Management.Manage Expense":
+                    AddControls(new ExpenseView());
+                    break;
+
+                case "Expense Management.Expense Category":
+                    AddControls(new ExpenseCategoryView());
+                    break;
+
                 case "Exam Management.Exam Terms":
                     break;
 

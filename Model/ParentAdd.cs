@@ -27,8 +27,8 @@ namespace SchoolManagementSystem.Model
                 DataTable dt = MainClass.GetData("Select * from tblParent where parentID = " + id);
                 foreach (DataRow row in dt.Rows)
                 {
-                    parentID = row["pIDNo"].ToString();
-                    txtIDNo.Text = row["pIDNo"].ToString();
+                    parentID = row["pIDNO"].ToString();
+                    txtIDNo.Text = row["pIDNO"].ToString();
                     txtName.Text = row["pName"].ToString();
                     ComboBoxGender.Text = row["pGender"].ToString();
                     txtEmail.Text = row["pEmail"].ToString();
@@ -37,10 +37,11 @@ namespace SchoolManagementSystem.Model
                 }
 
                 //Loading Children Info
-                string qry = "Select cName, sName, from tblStudent s inner join tblClass c on c.classID = s.sClassID where sParentIDNo = '" + parentID + "'";
+                string qry = "SELECT c.cName, s.sName\r\nFROM tblStudent s\r\nINNER JOIN tblClass c ON c.classID = s.sClassID WHERE s.sParentIDNo = '" + parentID + "'";
                 ListBox lb = new ListBox();
                 lb.Items.Add(dgvClass);
                 lb.Items.Add(dgvChildren);
+                MainClass.loadData(qry, DataGridView, lb);
             }
         }
 
@@ -101,7 +102,10 @@ namespace SchoolManagementSystem.Model
 
         }
         #endregion
-
+        private void DataGridView_CellFormatting(object sender, DataGridViewCellFormattingEventArgs e)
+        {
+            MainClass.SrNo(DataGridView);
+        }
         #endregion
 
     }

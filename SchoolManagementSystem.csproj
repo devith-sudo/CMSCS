@@ -272,6 +272,12 @@
     <Compile Include="Views\ExamMarkView.Designer.cs">
       <DependentUpon>ExamMarkView.cs</DependentUpon>
     </Compile>
+    <Compile Include="Views\ExpenseCategoryView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\ExpenseCategoryView.Designer.cs">
+      <DependentUpon>ExpenseCategoryView.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\ExpenseView.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -341,11 +347,17 @@
     <EmbeddedResource Include="Model\ExamGradeAdd.resx">
       <DependentUpon>ExamGradeAdd.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Model\ExamMarkAdd.resx">
+      <DependentUpon>ExamMarkAdd.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Model\ExpenseAdd.resx">
       <DependentUpon>ExpenseAdd.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Model\ExpenseCategoryAdd.resx">
       <DependentUpon>ExpenseCategoryAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Model\FeePayment.resx">
+      <DependentUpon>FeePayment.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Model\FeeVoucher.resx">
       <DependentUpon>FeeVoucher.cs</DependentUpon>
@@ -367,6 +379,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Model\StudentAttendanceAdd.resx">
       <DependentUpon>StudentAttendanceAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Model\StudentPromotion.resx">
+      <DependentUpon>StudentPromotion.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Model\SubjectAdd.resx">
       <DependentUpon>SubjectAdd.cs</DependentUpon>
@@ -403,6 +418,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Views\ExamGradeView.resx">
       <DependentUpon>ExamGradeView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\ExpenseCategoryView.resx">
+      <DependentUpon>ExpenseCategoryView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\ParentView.resx">
       <DependentUpon>ParentView.cs</DependentUpon>

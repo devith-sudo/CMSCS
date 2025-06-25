@@ -46,9 +46,9 @@
             this.ButtonPanel.Controls.Add(this.btnClose);
             this.ButtonPanel.Controls.Add(this.btnSave);
             this.ButtonPanel.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.ButtonPanel.Location = new System.Drawing.Point(0, 380);
+            this.ButtonPanel.Location = new System.Drawing.Point(0, 330);
             this.ButtonPanel.Name = "ButtonPanel";
-            this.ButtonPanel.Size = new System.Drawing.Size(800, 70);
+            this.ButtonPanel.Size = new System.Drawing.Size(705, 70);
             this.ButtonPanel.TabIndex = 5;
             // 
             // btnDelete
@@ -64,7 +64,7 @@
             this.btnDelete.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(34)))), ((int)(((byte)(148)))));
             this.btnDelete.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F);
             this.btnDelete.ForeColor = System.Drawing.Color.White;
-            this.btnDelete.Location = new System.Drawing.Point(671, 14);
+            this.btnDelete.Location = new System.Drawing.Point(576, 14);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(117, 45);
             this.btnDelete.TabIndex = 6;
@@ -114,7 +114,7 @@
             this.TopPanel.Dock = System.Windows.Forms.DockStyle.Top;
             this.TopPanel.Location = new System.Drawing.Point(0, 0);
             this.TopPanel.Name = "TopPanel";
-            this.TopPanel.Size = new System.Drawing.Size(800, 69);
+            this.TopPanel.Size = new System.Drawing.Size(705, 69);
             this.TopPanel.TabIndex = 4;
             // 
             // label1
@@ -134,7 +134,7 @@
             this.btnExit.BorderRadius = 4;
             this.btnExit.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(152)))), ((int)(((byte)(166)))));
             this.btnExit.IconColor = System.Drawing.Color.White;
-            this.btnExit.Location = new System.Drawing.Point(743, 12);
+            this.btnExit.Location = new System.Drawing.Point(648, 12);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(45, 29);
             this.btnExit.TabIndex = 2;
@@ -143,7 +143,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(705, 400);
             this.Controls.Add(this.ButtonPanel);
             this.Controls.Add(this.TopPanel);
             this.Name = "StaffAttendanceAdd";

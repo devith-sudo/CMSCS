@@ -59,3 +59,7 @@ D:\Universities\Setec SV1\C#3\SchoolManagementSystem\obj\Debug\SchoolManagementS
 D:\Universities\Setec SV1\C#3\SchoolManagementSystem\obj\Debug\SchoolManagementSystem.Views.StaffAttendanceView.resources
 D:\Universities\Setec SV1\C#3\SchoolManagementSystem\obj\Debug\SchoolManagementSystem.Views.StudentAttendanceView.resources
 D:\Universities\Setec SV1\C#3\SchoolManagementSystem\obj\Debug\SchoolManagementSystem.Views.ParentView.resources
+D:\Universities\Setec SV1\C#3\SchoolManagementSystem\obj\Debug\SchoolManagementSystem.Model.ExamMarkAdd.resources
+D:\Universities\Setec SV1\C#3\SchoolManagementSystem\obj\Debug\SchoolManagementSystem.Model.FeePayment.resources
+D:\Universities\Setec SV1\C#3\SchoolManagementSystem\obj\Debug\SchoolManagementSystem.Model.StudentPromotion.resources
+D:\Universities\Setec SV1\C#3\SchoolManagementSystem\obj\Debug\SchoolManagementSystem.Views.ExpenseCategoryView.resources
