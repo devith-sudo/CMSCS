@@ -63,3 +63,9 @@ D:\Universities\Setec SV1\C#3\SchoolManagementSystem\obj\Debug\SchoolManagementS
 D:\Universities\Setec SV1\C#3\SchoolManagementSystem\obj\Debug\SchoolManagementSystem.Model.FeePayment.resources
 D:\Universities\Setec SV1\C#3\SchoolManagementSystem\obj\Debug\SchoolManagementSystem.Model.StudentPromotion.resources
 D:\Universities\Setec SV1\C#3\SchoolManagementSystem\obj\Debug\SchoolManagementSystem.Views.ExpenseCategoryView.resources
+D:\Universities\Setec SV1\C#3\SchoolManagementSystem\obj\Debug\SchoolManagementSystem.Views.ExpenseView.resources
+D:\Universities\Setec SV1\C#3\SchoolManagementSystem\bin\Debug\SqlServerTypes\x64\msvcr120.dll
+D:\Universities\Setec SV1\C#3\SchoolManagementSystem\bin\Debug\SqlServerTypes\x64\SqlServerSpatial140.dll
+D:\Universities\Setec SV1\C#3\SchoolManagementSystem\bin\Debug\SqlServerTypes\x86\msvcr120.dll
+D:\Universities\Setec SV1\C#3\SchoolManagementSystem\bin\Debug\SqlServerTypes\x86\SqlServerSpatial140.dll
+D:\Universities\Setec SV1\C#3\SchoolManagementSystem\bin\Debug\Microsoft.SqlServer.Types.dll

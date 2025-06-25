@@ -31,17 +31,69 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.DataGridView = new Guna.UI2.WinForms.Guna2DataGridView();
-            this.dgvSr = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgvID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgvIDNo = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgvName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgvGender = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgvPhone = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgvEmail = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dgvAddress = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgvEmail = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgvPhone = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgvGender = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgvName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgvIDNo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgvID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgvSr = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DataGridView = new Guna.UI2.WinForms.Guna2DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.DataGridView)).BeginInit();
             this.SuspendLayout();
+            // 
+            // dgvAddress
+            // 
+            this.dgvAddress.HeaderText = "Address";
+            this.dgvAddress.Name = "dgvAddress";
+            this.dgvAddress.ReadOnly = true;
+            // 
+            // dgvEmail
+            // 
+            this.dgvEmail.HeaderText = "Email";
+            this.dgvEmail.Name = "dgvEmail";
+            this.dgvEmail.ReadOnly = true;
+            // 
+            // dgvPhone
+            // 
+            this.dgvPhone.HeaderText = "Phone";
+            this.dgvPhone.Name = "dgvPhone";
+            this.dgvPhone.ReadOnly = true;
+            // 
+            // dgvGender
+            // 
+            this.dgvGender.HeaderText = "Gender";
+            this.dgvGender.Name = "dgvGender";
+            this.dgvGender.ReadOnly = true;
+            // 
+            // dgvName
+            // 
+            this.dgvName.FillWeight = 124.8124F;
+            this.dgvName.HeaderText = "Name";
+            this.dgvName.Name = "dgvName";
+            this.dgvName.ReadOnly = true;
+            // 
+            // dgvIDNo
+            // 
+            this.dgvIDNo.HeaderText = "ID Roll";
+            this.dgvIDNo.Name = "dgvIDNo";
+            this.dgvIDNo.ReadOnly = true;
+            // 
+            // dgvID
+            // 
+            this.dgvID.FillWeight = 31.79932F;
+            this.dgvID.HeaderText = "ID";
+            this.dgvID.MinimumWidth = 30;
+            this.dgvID.Name = "dgvID";
+            this.dgvID.ReadOnly = true;
+            this.dgvID.Visible = false;
+            // 
+            // dgvSr
+            // 
+            this.dgvSr.HeaderText = "No.";
+            this.dgvSr.Name = "dgvSr";
+            this.dgvSr.ReadOnly = true;
             // 
             // DataGridView
             // 
@@ -114,58 +166,6 @@
             this.DataGridView.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DataGridView_CellDoubleClick);
             this.DataGridView.CellFormatting += new System.Windows.Forms.DataGridViewCellFormattingEventHandler(this.DataGridView_CellFormatting);
             // 
-            // dgvSr
-            // 
-            this.dgvSr.HeaderText = "No.";
-            this.dgvSr.Name = "dgvSr";
-            this.dgvSr.ReadOnly = true;
-            // 
-            // dgvID
-            // 
-            this.dgvID.FillWeight = 31.79932F;
-            this.dgvID.HeaderText = "ID";
-            this.dgvID.MinimumWidth = 30;
-            this.dgvID.Name = "dgvID";
-            this.dgvID.ReadOnly = true;
-            this.dgvID.Visible = false;
-            // 
-            // dgvIDNo
-            // 
-            this.dgvIDNo.HeaderText = "ID Roll";
-            this.dgvIDNo.Name = "dgvIDNo";
-            this.dgvIDNo.ReadOnly = true;
-            // 
-            // dgvName
-            // 
-            this.dgvName.FillWeight = 124.8124F;
-            this.dgvName.HeaderText = "Name";
-            this.dgvName.Name = "dgvName";
-            this.dgvName.ReadOnly = true;
-            // 
-            // dgvGender
-            // 
-            this.dgvGender.HeaderText = "Gender";
-            this.dgvGender.Name = "dgvGender";
-            this.dgvGender.ReadOnly = true;
-            // 
-            // dgvPhone
-            // 
-            this.dgvPhone.HeaderText = "Phone";
-            this.dgvPhone.Name = "dgvPhone";
-            this.dgvPhone.ReadOnly = true;
-            // 
-            // dgvEmail
-            // 
-            this.dgvEmail.HeaderText = "Email";
-            this.dgvEmail.Name = "dgvEmail";
-            this.dgvEmail.ReadOnly = true;
-            // 
-            // dgvAddress
-            // 
-            this.dgvAddress.HeaderText = "Address";
-            this.dgvAddress.Name = "dgvAddress";
-            this.dgvAddress.ReadOnly = true;
-            // 
             // ParentView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -183,14 +183,14 @@
 
         #endregion
 
-        private Guna.UI2.WinForms.Guna2DataGridView DataGridView;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dgvSr;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dgvID;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dgvIDNo;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dgvName;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dgvGender;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dgvPhone;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dgvEmail;
         private System.Windows.Forms.DataGridViewTextBoxColumn dgvAddress;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dgvEmail;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dgvPhone;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dgvGender;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dgvName;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dgvIDNo;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dgvID;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dgvSr;
+        private Guna.UI2.WinForms.Guna2DataGridView DataGridView;
     }
 }

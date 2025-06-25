@@ -64,7 +64,7 @@ namespace SchoolManagementSystem.Model
             }
             else
             {
-                qry = "UPDATE tblClass SET expCatName = @name WHERE expCatID = @id";
+                qry = "UPDATE tblExpenseCat SET expCatName = @name WHERE expCatID = @id";
             }
 
             Hashtable ht = new Hashtable();

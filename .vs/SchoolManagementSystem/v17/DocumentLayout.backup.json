@@ -3,24 +3,12 @@
   "WorkspaceRootPath": "D:\\Universities\\Setec SV1\\C#3\\SchoolManagementSystem\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{9EA81F67-3A99-4A98-985B-2E7DD160951E}|SchoolManagementSystem.csproj|d:\\universities\\setec sv1\\c#3\\schoolmanagementsystem\\model\\expenseadd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9EA81F67-3A99-4A98-985B-2E7DD160951E}|SchoolManagementSystem.csproj|solutionrelative:model\\expenseadd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9EA81F67-3A99-4A98-985B-2E7DD160951E}|SchoolManagementSystem.csproj|d:\\universities\\setec sv1\\c#3\\schoolmanagementsystem\\model\\studentattendanceadd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{9EA81F67-3A99-4A98-985B-2E7DD160951E}|SchoolManagementSystem.csproj|solutionrelative:model\\studentattendanceadd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9EA81F67-3A99-4A98-985B-2E7DD160951E}|SchoolManagementSystem.csproj|D:\\Universities\\Setec SV1\\C#3\\SchoolManagementSystem\\model\\expenseadd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{9EA81F67-3A99-4A98-985B-2E7DD160951E}|SchoolManagementSystem.csproj|solutionrelative:model\\expenseadd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9EA81F67-3A99-4A98-985B-2E7DD160951E}|SchoolManagementSystem.csproj|D:\\Universities\\Setec SV1\\C#3\\SchoolManagementSystem\\model\\expensecategoryadd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9EA81F67-3A99-4A98-985B-2E7DD160951E}|SchoolManagementSystem.csproj|solutionrelative:model\\expensecategoryadd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9EA81F67-3A99-4A98-985B-2E7DD160951E}|SchoolManagementSystem.csproj|D:\\Universities\\Setec SV1\\C#3\\SchoolManagementSystem\\views\\studentview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9EA81F67-3A99-4A98-985B-2E7DD160951E}|SchoolManagementSystem.csproj|solutionrelative:views\\studentview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9EA81F67-3A99-4A98-985B-2E7DD160951E}|SchoolManagementSystem.csproj|D:\\Universities\\Setec SV1\\C#3\\SchoolManagementSystem\\views\\expensecategoryview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9EA81F67-3A99-4A98-985B-2E7DD160951E}|SchoolManagementSystem.csproj|solutionrelative:views\\expensecategoryview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9EA81F67-3A99-4A98-985B-2E7DD160951E}|SchoolManagementSystem.csproj|d:\\universities\\setec sv1\\c#3\\schoolmanagementsystem\\views\\studentattendanceview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{9EA81F67-3A99-4A98-985B-2E7DD160951E}|SchoolManagementSystem.csproj|solutionrelative:views\\studentattendanceview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -43,62 +31,26 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "ExpenseAdd.cs",
-              "DocumentMoniker": "D:\\Universities\\Setec SV1\\C#3\\SchoolManagementSystem\\Model\\ExpenseAdd.cs",
-              "RelativeDocumentMoniker": "Model\\ExpenseAdd.cs",
-              "ToolTip": "D:\\Universities\\Setec SV1\\C#3\\SchoolManagementSystem\\Model\\ExpenseAdd.cs",
-              "RelativeToolTip": "Model\\ExpenseAdd.cs",
-              "ViewState": "AgIAAC4AAAAAAAAAAAAowEcAAAAjAAAAAAAAAA==",
+              "Title": "StudentAttendanceAdd.cs [Design]",
+              "DocumentMoniker": "D:\\Universities\\Setec SV1\\C#3\\SchoolManagementSystem\\Model\\StudentAttendanceAdd.cs",
+              "RelativeDocumentMoniker": "Model\\StudentAttendanceAdd.cs",
+              "ToolTip": "D:\\Universities\\Setec SV1\\C#3\\SchoolManagementSystem\\Model\\StudentAttendanceAdd.cs [Design]",
+              "RelativeToolTip": "Model\\StudentAttendanceAdd.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-25T09:17:28.545Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "StudentView.cs",
-              "DocumentMoniker": "D:\\Universities\\Setec SV1\\C#3\\SchoolManagementSystem\\Views\\StudentView.cs",
-              "RelativeDocumentMoniker": "Views\\StudentView.cs",
-              "ToolTip": "D:\\Universities\\Setec SV1\\C#3\\SchoolManagementSystem\\Views\\StudentView.cs",
-              "RelativeToolTip": "Views\\StudentView.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-25T09:14:10.222Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ExpenseCategoryAdd.cs",
-              "DocumentMoniker": "D:\\Universities\\Setec SV1\\C#3\\SchoolManagementSystem\\Model\\ExpenseCategoryAdd.cs",
-              "RelativeDocumentMoniker": "Model\\ExpenseCategoryAdd.cs",
-              "ToolTip": "D:\\Universities\\Setec SV1\\C#3\\SchoolManagementSystem\\Model\\ExpenseCategoryAdd.cs",
-              "RelativeToolTip": "Model\\ExpenseCategoryAdd.cs",
-              "ViewState": "AgIAADMAAAAAAAAAAAAAAFMAAAASAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-25T08:49:13.254Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "ExpenseCategoryView.cs",
-              "DocumentMoniker": "D:\\Universities\\Setec SV1\\C#3\\SchoolManagementSystem\\Views\\ExpenseCategoryView.cs",
-              "RelativeDocumentMoniker": "Views\\ExpenseCategoryView.cs",
-              "ToolTip": "D:\\Universities\\Setec SV1\\C#3\\SchoolManagementSystem\\Views\\ExpenseCategoryView.cs",
-              "RelativeToolTip": "Views\\ExpenseCategoryView.cs",
-              "ViewState": "AgIAACMAAAAAAAAAAAAIwDQAAAAXAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-25T08:28:34.232Z"
+              "WhenOpened": "2025-06-25T17:22:41.611Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "ExpenseAdd.cs [Design]",
-              "DocumentMoniker": "D:\\Universities\\Setec SV1\\C#3\\SchoolManagementSystem\\Model\\ExpenseAdd.cs",
-              "RelativeDocumentMoniker": "Model\\ExpenseAdd.cs",
-              "ToolTip": "D:\\Universities\\Setec SV1\\C#3\\SchoolManagementSystem\\Model\\ExpenseAdd.cs [Design]",
-              "RelativeToolTip": "Model\\ExpenseAdd.cs [Design]",
+              "Title": "StudentAttendanceView.cs [Design]",
+              "DocumentMoniker": "D:\\Universities\\Setec SV1\\C#3\\SchoolManagementSystem\\Views\\StudentAttendanceView.cs",
+              "RelativeDocumentMoniker": "Views\\StudentAttendanceView.cs",
+              "ToolTip": "D:\\Universities\\Setec SV1\\C#3\\SchoolManagementSystem\\Views\\StudentAttendanceView.cs [Design]",
+              "RelativeToolTip": "Views\\StudentAttendanceView.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-25T05:29:52.275Z"
+              "WhenOpened": "2025-06-25T17:22:34.721Z",
+              "EditorCaption": " [Design]"
             }
           ]
         }

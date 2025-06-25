@@ -77,6 +77,7 @@
             this.btnDelete.Size = new System.Drawing.Size(117, 45);
             this.btnDelete.TabIndex = 6;
             this.btnDelete.Text = "Delete";
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // btnClose
             // 
@@ -95,6 +96,7 @@
             this.btnClose.Size = new System.Drawing.Size(117, 45);
             this.btnClose.TabIndex = 5;
             this.btnClose.Text = "Close";
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
             // btnSave
             // 
@@ -113,6 +115,7 @@
             this.btnSave.Size = new System.Drawing.Size(117, 45);
             this.btnSave.TabIndex = 4;
             this.btnSave.Text = "Save";
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // TopPanel
             // 

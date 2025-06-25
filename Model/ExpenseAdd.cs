@@ -1,12 +1,6 @@
 ﻿using System;
 using System.Collections;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace SchoolManagementSystem.Model
@@ -19,20 +13,27 @@ namespace SchoolManagementSystem.Model
         }
 
         public int id = 0;
+
         private void ExpenseAdd_Load(object sender, EventArgs e)
         {
+            string qry = "SELECT expCatID AS ID, expCatName AS Name FROM tblExpenseCat";
+            MainClass.CBFill(qry, ComboBoxExpenseType);
+
             if (id > 0)
             {
-                DataTable dt = MainClass.GetData("SELECT * FROM tblExpenseCat WHERE expCatID=" + id);
+                DataTable dt = MainClass.GetData("SELECT * FROM tblExpense WHERE expID = " + id);
                 foreach (DataRow dr in dt.Rows)
                 {
-                    txtDate.Text = dr["expCatName"].ToString();
+                    txtDate.Text = Convert.ToDateTime(dr["expDate"]).ToString("dd-MM-yyyy");
+                    ComboBoxExpenseType.SelectedValue = Convert.ToInt32(dr["expCatID"]);
+                    txtDescription.Text = dr["expDescription"].ToString();
+                    txtAmount.Text = dr["expAmount"].ToString();
                 }
             }
         }
 
-        #region Event validate
-        #region btnClose
+        #region Event Handlers
+
         private void btnClose_Click(object sender, EventArgs e)
         {
             this.Close();
@@ -42,45 +43,57 @@ namespace SchoolManagementSystem.Model
         {
             if (id > 0)
             {
-                string qry = "Delete from tblExpenseCat where expCatID=" + id + "";
+                string qry = "DELETE FROM tblExpense WHERE expID = " + id + "'";
                 Hashtable ht = new Hashtable();
                 MainClass.data_insert_update_delete(qry, ht);
-                MessageBox.Show("Delete Successfully");
+                MessageBox.Show("Deleted successfully.");
                 MainClass.Enable_Reset(this);
                 id = 0;
             }
         }
-        #endregion
-        #region btnSave
+
         public void btnSave_Click(object sender, EventArgs e)
         {
             if (MainClass.Validatation(this) == false)
-            { return; }
+                return;
 
             string qry = "";
+            Hashtable ht = new Hashtable();
+
             if (id == 0)
             {
-                qry = "INSERT INTO tblExpenseCat VALUES (@name)";
+                qry = "INSERT INTO tblExpense (expCatID, expDate, expDescription, expAmount) " +
+                      "VALUES (@cat, @date, @desc, @amount)";
             }
             else
             {
-                qry = "UPDATE tblClass SET expCatName = @name WHERE expCatID = @id";
+                qry = "UPDATE tblExpense SET expCatID = @cat, expDate = @date, expDescription = @desc, expAmount = @amount " +
+                      "WHERE expID = @id";
+                ht.Add("@id", id);
             }
 
-            Hashtable ht = new Hashtable();
-            ht.Add("@id", id);
-            ht.Add("@name", txtDate.Text);
-            ht.Add("@date", txtDate.Text);
+            ht.Add("@cat", Convert.ToInt32(ComboBoxExpenseType.SelectedValue));
+            // Better date handling
+            DateTime dob;
+            if (DateTime.TryParseExact(txtDate.Text, "dd-MM-yyyy", null, System.Globalization.DateTimeStyles.None, out dob))
+            {
+                ht.Add("@date", dob);
+            }
+            else
+            {
+                ht.Add("@dob", DBNull.Value);
+            }
+            ht.Add("@desc", txtDescription.Text);
+            ht.Add("@amount", Convert.ToDecimal(txtAmount.Text));
 
             int r = MainClass.data_insert_update_delete(qry, ht);
             if (r > 0)
             {
-                MessageBox.Show("Save Successfully");
+                MessageBox.Show("Saved successfully.");
                 MainClass.Enable_Reset(this);
                 id = 0;
             }
         }
-        #endregion
 
         #endregion
     }
