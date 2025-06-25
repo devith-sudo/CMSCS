@@ -22,11 +22,15 @@ namespace SchoolManagementSystem.Views
         #region LoadData
         private void LoadData()
         {
-            string qry = "Select * from tblSubject where subjectName like '%" + txtSearch.Text + "%' order by subjectName ASC";
+            string qry = "Select * from tblParent where pName like '%" + txtSearch.Text + "%' order by pName ASC";
             ListBox lb = new ListBox();
             lb.Items.Add(dgvID);
-
+            lb.Items.Add(dgvIDNo);
             lb.Items.Add(dgvName);
+            lb.Items.Add(dgvGender);
+            lb.Items.Add(dgvPhone);
+            lb.Items.Add(dgvEmail);
+            lb.Items.Add(dgvAddress);
             MainClass.loadData(qry, DataGridView, lb);
         }
         #endregion
@@ -58,9 +62,9 @@ namespace SchoolManagementSystem.Views
         #region CellDoubleClick
         private void DataGridView_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
-            int id = Convert.ToInt32(DataGridView.CurrentRow.Cells["dvgID"].Value);
+            int id = Convert.ToInt32(DataGridView.CurrentRow.Cells["dgvID"].Value);
             ParentAdd parentAdd = new ParentAdd();
-            //parentAdd.id = id;
+            parentAdd.id = id;
             parentAdd.ShowDialog();
             LoadData();
         }

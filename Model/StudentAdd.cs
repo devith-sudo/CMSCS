@@ -80,21 +80,20 @@ namespace SchoolManagementSystem.Model
         #region btnSave
         public void btnSave_Click(object sender, EventArgs e)
         {
-            try
+
+            string qry = "";
+            if (id == 0)
             {
-                string qry = "";
-                if (id == 0)
-                {
-                    qry = @"INSERT INTO tblStudent 
+                qry = @"INSERT INTO tblStudent 
                     (sRollNo, sName, sGender, sdob, sImage, sParentName, sParentIDNo, sParentEmail, 
                      sAddress, sClassID, PreviousSchool, admissionDate, monthlyFee, sStatus)
                     VALUES 
                     (@rollno, @name, @gender, @dob, @image, @parentName, @parentId, @email, 
                      @address, @class, @preSchool, @admissionDate, @fee, @status)";
-                }
-                else
-                {
-                    qry = @"UPDATE tblStudent SET 
+            }
+            else
+            {
+                qry = @"UPDATE tblStudent SET 
                         sRollNo = @rollno, 
                         sName = @name, 
                         sGender = @gender,  
@@ -110,75 +109,70 @@ namespace SchoolManagementSystem.Model
                         monthlyFee = @fee, 
                         sStatus = @status 
                     WHERE studentID = @id";
-                }
+            }
 
-                byte[] imageByteArray = null;
-                if (pictureBox.Image != null)
+            byte[] imageByteArray = null;
+            if (pictureBox.Image != null)
+            {
+                using (MemoryStream ms = new MemoryStream())
                 {
-                    using (MemoryStream ms = new MemoryStream())
-                    {
-                        pictureBox.Image.Save(ms, System.Drawing.Imaging.ImageFormat.Png);
-                        imageByteArray = ms.ToArray();
-                    }
-                }
-
-                Hashtable ht = new Hashtable();
-                ht.Add("@rollno", txtRollNo.Text);
-                ht.Add("@name", txtName.Text);
-                ht.Add("@gender", ComboBoxGender.Text);
-                ht.Add("@parentName", txtParentName.Text);
-                ht.Add("@parentId", txtParentID.Text);
-                ht.Add("@email", txtParentEmail.Text);
-                ht.Add("@address", txtAddress.Text);
-                ht.Add("@class", ComboxClass.SelectedValue);
-                ht.Add("@preSchool", txtPreviousSchool.Text);
-                ht.Add("@status", ComboBoxStatus.Text);
-
-                if (DateTime.TryParseExact(txtDOB.Text, "dd-MM-yyyy", null, System.Globalization.DateTimeStyles.None, out DateTime dob))
-                {
-                    ht.Add("@dob", dob);
-                }
-                else
-                {
-                    ht.Add("@dob", DBNull.Value);
-                }
-
-                if (DateTime.TryParseExact(txtAdmissionDate.Text, "dd-MM-yyyy", null, System.Globalization.DateTimeStyles.None, out DateTime admissionDate))
-                {
-                    ht.Add("@admissionDate", admissionDate);
-                }
-                else
-                {
-                    ht.Add("@admissionDate", DBNull.Value);
-                }
-
-                if (decimal.TryParse(txtFee.Text, out decimal fee))
-                {
-                    ht.Add("@fee", fee); // ✅ fixed
-                }
-                else
-                {
-                    ht.Add("@fee", 0); // or DBNull.Value
-                }
-
-                ht.Add("@image", imageByteArray);
-
-                if (id > 0)
-                {
-                    ht.Add("@id", id); // Required for UPDATE
-                }
-
-                int r = MainClass.data_insert_update_delete(qry, ht);
-                if (r > 0)
-                {
-                    MessageBox.Show("Saved Successfully");
-                    MainClass.Enable_Reset(this);
-                    id = 0;
+                    pictureBox.Image.Save(ms, System.Drawing.Imaging.ImageFormat.Png);
+                    imageByteArray = ms.ToArray();
                 }
             }
-            catch (Exception ex)
+
+            Hashtable ht = new Hashtable();
+            ht.Add("@rollno", txtRollNo.Text);
+            ht.Add("@name", txtName.Text);
+            ht.Add("@gender", ComboBoxGender.Text);
+            ht.Add("@parentName", txtParentName.Text);
+            ht.Add("@parentId", txtParentID.Text);
+            ht.Add("@email", txtParentEmail.Text);
+            ht.Add("@address", txtAddress.Text);
+            ht.Add("@class", ComboxClass.SelectedValue);
+            ht.Add("@preSchool", txtPreviousSchool.Text);
+            ht.Add("@status", ComboBoxStatus.Text);
+
+            if (DateTime.TryParseExact(txtDOB.Text, "dd-MM-yyyy", null, System.Globalization.DateTimeStyles.None, out DateTime dob))
             {
-                MessageBox.Show("Error saving data: " + ex.Message);
+                ht.Add("@dob", dob);
+            }
+            else
+            {
+                ht.Add("@dob", DBNull.Value);
+            }
+
+            if (DateTime.TryParseExact(txtAdmissionDate.Text, "dd-MM-yyyy", null, System.Globalization.DateTimeStyles.None, out DateTime admissionDate))
+            {
+                ht.Add("@admissionDate", admissionDate);
+            }
+            else
+            {
+                ht.Add("@admissionDate", DBNull.Value);
+            }
+
+            if (decimal.TryParse(txtFee.Text, out decimal fee))
+            {
+                ht.Add("@fee", fee); // ✅ fixed
+            }
+            else
+            {
+                ht.Add("@fee", 0); // or DBNull.Value
+            }
+
+            ht.Add("@image", imageByteArray);
+
+            if (id > 0)
+            {
+                ht.Add("@id", id); // Required for UPDATE
+            }
+
+            int r = MainClass.data_insert_update_delete(qry, ht);
+            if (r > 0)
+            {
+                MessageBox.Show("Saved Successfully");
+                MainClass.Enable_Reset(this);
+                id = 0;
             }
         }
         #endregion

@@ -28,13 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.ComboBoxGender = new Guna.UI2.WinForms.Guna2ComboBox();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.txtID = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtIDNo = new Guna.UI2.WinForms.Guna2TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.txtName = new Guna.UI2.WinForms.Guna2TextBox();
             this.ButtonPanel = new System.Windows.Forms.Panel();
@@ -51,6 +51,7 @@
             this.label5 = new System.Windows.Forms.Label();
             this.txtAddress = new Guna.UI2.WinForms.Guna2TextBox();
             this.DataGridView = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.dgvSr = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dgvId = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dgvClass = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dgvChildren = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -104,30 +105,30 @@
             this.label7.TabIndex = 55;
             this.label7.Text = "Roll No";
             // 
-            // txtID
+            // txtIDNo
             // 
-            this.txtID.AutoRoundedCorners = true;
-            this.txtID.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(112)))), ((int)(((byte)(51)))), ((int)(((byte)(255)))));
-            this.txtID.BorderRadius = 17;
-            this.txtID.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtID.DefaultText = "";
-            this.txtID.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtID.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtID.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtID.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtID.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(41)))), ((int)(((byte)(74)))));
-            this.txtID.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtID.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtID.ForeColor = System.Drawing.Color.White;
-            this.txtID.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtID.Location = new System.Drawing.Point(52, 105);
-            this.txtID.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.txtID.Name = "txtID";
-            this.txtID.PasswordChar = '\0';
-            this.txtID.PlaceholderText = "Roll No";
-            this.txtID.SelectedText = "";
-            this.txtID.Size = new System.Drawing.Size(83, 36);
-            this.txtID.TabIndex = 56;
+            this.txtIDNo.AutoRoundedCorners = true;
+            this.txtIDNo.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(112)))), ((int)(((byte)(51)))), ((int)(((byte)(255)))));
+            this.txtIDNo.BorderRadius = 17;
+            this.txtIDNo.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtIDNo.DefaultText = "";
+            this.txtIDNo.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtIDNo.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtIDNo.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtIDNo.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtIDNo.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(41)))), ((int)(((byte)(74)))));
+            this.txtIDNo.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtIDNo.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F);
+            this.txtIDNo.ForeColor = System.Drawing.Color.White;
+            this.txtIDNo.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtIDNo.Location = new System.Drawing.Point(52, 105);
+            this.txtIDNo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtIDNo.Name = "txtIDNo";
+            this.txtIDNo.PasswordChar = '\0';
+            this.txtIDNo.PlaceholderText = "Roll No";
+            this.txtIDNo.SelectedText = "";
+            this.txtIDNo.Size = new System.Drawing.Size(83, 36);
+            this.txtIDNo.TabIndex = 56;
             // 
             // label2
             // 
@@ -381,34 +382,35 @@
             this.DataGridView.AllowUserToAddRows = false;
             this.DataGridView.AllowUserToDeleteRows = false;
             this.DataGridView.AllowUserToOrderColumns = true;
-            dataGridViewCellStyle7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(197)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
-            this.DataGridView.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(197)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
+            this.DataGridView.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.DataGridView.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.DataGridView.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(41)))), ((int)(((byte)(74)))));
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(81)))), ((int)(((byte)(181)))));
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.DataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(81)))), ((int)(((byte)(181)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.DataGridView.ColumnHeadersHeight = 30;
             this.DataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             this.DataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dgvSr,
             this.dgvId,
             this.dgvClass,
             this.dgvChildren});
-            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(220)))), ((int)(((byte)(239)))));
-            dataGridViewCellStyle9.Font = new System.Drawing.Font("Arial Rounded MT Bold", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(139)))), ((int)(((byte)(205)))));
-            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.Silver;
-            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.DataGridView.DefaultCellStyle = dataGridViewCellStyle9;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(220)))), ((int)(((byte)(239)))));
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Arial Rounded MT Bold", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(139)))), ((int)(((byte)(205)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Silver;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.DataGridView.DefaultCellStyle = dataGridViewCellStyle3;
             this.DataGridView.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(201)))), ((int)(((byte)(231)))));
             this.DataGridView.Location = new System.Drawing.Point(51, 328);
             this.DataGridView.Name = "DataGridView";
@@ -440,13 +442,20 @@
             this.DataGridView.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(139)))), ((int)(((byte)(205)))));
             this.DataGridView.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.Silver;
             // 
+            // dgvSr
+            // 
+            this.dgvSr.HeaderText = "No.";
+            this.dgvSr.Name = "dgvSr";
+            this.dgvSr.ReadOnly = true;
+            // 
             // dgvId
             // 
             this.dgvId.FillWeight = 37.72707F;
-            this.dgvId.HeaderText = "No.";
+            this.dgvId.HeaderText = "ID";
             this.dgvId.MinimumWidth = 30;
             this.dgvId.Name = "dgvId";
             this.dgvId.ReadOnly = true;
+            this.dgvId.Visible = false;
             // 
             // dgvClass
             // 
@@ -477,13 +486,14 @@
             this.Controls.Add(this.ComboBoxGender);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.txtID);
+            this.Controls.Add(this.txtIDNo);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txtName);
             this.Controls.Add(this.ButtonPanel);
             this.Controls.Add(this.TopPanel);
             this.Name = "ParentAdd";
             this.Text = "ParentAdd";
+            this.Load += new System.EventHandler(this.ParentAdd_Load);
             this.ButtonPanel.ResumeLayout(false);
             this.TopPanel.ResumeLayout(false);
             this.TopPanel.PerformLayout();
@@ -498,7 +508,7 @@
         private Guna.UI2.WinForms.Guna2ComboBox ComboBoxGender;
         public System.Windows.Forms.Label label8;
         public System.Windows.Forms.Label label7;
-        public Guna.UI2.WinForms.Guna2TextBox txtID;
+        public Guna.UI2.WinForms.Guna2TextBox txtIDNo;
         public System.Windows.Forms.Label label2;
         public Guna.UI2.WinForms.Guna2TextBox txtName;
         private System.Windows.Forms.Panel ButtonPanel;
@@ -515,6 +525,7 @@
         public System.Windows.Forms.Label label5;
         public Guna.UI2.WinForms.Guna2TextBox txtAddress;
         private Guna.UI2.WinForms.Guna2DataGridView DataGridView;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dgvSr;
         private System.Windows.Forms.DataGridViewTextBoxColumn dgvId;
         private System.Windows.Forms.DataGridViewTextBoxColumn dgvClass;
         private System.Windows.Forms.DataGridViewTextBoxColumn dgvChildren;

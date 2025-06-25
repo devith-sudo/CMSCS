@@ -28,13 +28,18 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.DataGridView = new Guna.UI2.WinForms.Guna2DataGridView();
             this.dgvSr = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dgvID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgvIDNo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dgvName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgvGender = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgvPhone = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgvEmail = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgvAddress = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.DataGridView)).BeginInit();
             this.SuspendLayout();
             // 
@@ -43,34 +48,39 @@
             this.DataGridView.AllowUserToAddRows = false;
             this.DataGridView.AllowUserToDeleteRows = false;
             this.DataGridView.AllowUserToOrderColumns = true;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(197)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
-            this.DataGridView.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(197)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
+            this.DataGridView.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.DataGridView.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.DataGridView.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(41)))), ((int)(((byte)(74)))));
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(81)))), ((int)(((byte)(181)))));
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.DataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(81)))), ((int)(((byte)(181)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.DataGridView.ColumnHeadersHeight = 30;
             this.DataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             this.DataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dgvSr,
             this.dgvID,
-            this.dgvName});
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(220)))), ((int)(((byte)(239)))));
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Arial Rounded MT Bold", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(139)))), ((int)(((byte)(205)))));
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.Silver;
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.DataGridView.DefaultCellStyle = dataGridViewCellStyle6;
+            this.dgvIDNo,
+            this.dgvName,
+            this.dgvGender,
+            this.dgvPhone,
+            this.dgvEmail,
+            this.dgvAddress});
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(220)))), ((int)(((byte)(239)))));
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Arial Rounded MT Bold", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(139)))), ((int)(((byte)(205)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Silver;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.DataGridView.DefaultCellStyle = dataGridViewCellStyle3;
             this.DataGridView.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(201)))), ((int)(((byte)(231)))));
             this.DataGridView.Location = new System.Drawing.Point(12, 83);
             this.DataGridView.Name = "DataGridView";
@@ -119,12 +129,42 @@
             this.dgvID.ReadOnly = true;
             this.dgvID.Visible = false;
             // 
+            // dgvIDNo
+            // 
+            this.dgvIDNo.HeaderText = "ID Roll";
+            this.dgvIDNo.Name = "dgvIDNo";
+            this.dgvIDNo.ReadOnly = true;
+            // 
             // dgvName
             // 
             this.dgvName.FillWeight = 124.8124F;
-            this.dgvName.HeaderText = "Subject";
+            this.dgvName.HeaderText = "Name";
             this.dgvName.Name = "dgvName";
             this.dgvName.ReadOnly = true;
+            // 
+            // dgvGender
+            // 
+            this.dgvGender.HeaderText = "Gender";
+            this.dgvGender.Name = "dgvGender";
+            this.dgvGender.ReadOnly = true;
+            // 
+            // dgvPhone
+            // 
+            this.dgvPhone.HeaderText = "Phone";
+            this.dgvPhone.Name = "dgvPhone";
+            this.dgvPhone.ReadOnly = true;
+            // 
+            // dgvEmail
+            // 
+            this.dgvEmail.HeaderText = "Email";
+            this.dgvEmail.Name = "dgvEmail";
+            this.dgvEmail.ReadOnly = true;
+            // 
+            // dgvAddress
+            // 
+            this.dgvAddress.HeaderText = "Address";
+            this.dgvAddress.Name = "dgvAddress";
+            this.dgvAddress.ReadOnly = true;
             // 
             // ParentView
             // 
@@ -146,6 +186,11 @@
         private Guna.UI2.WinForms.Guna2DataGridView DataGridView;
         private System.Windows.Forms.DataGridViewTextBoxColumn dgvSr;
         private System.Windows.Forms.DataGridViewTextBoxColumn dgvID;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dgvIDNo;
         private System.Windows.Forms.DataGridViewTextBoxColumn dgvName;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dgvGender;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dgvPhone;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dgvEmail;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dgvAddress;
     }
 }

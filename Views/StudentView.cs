@@ -29,6 +29,7 @@ namespace SchoolManagementSystem.Views
             StudentAdd studentAdd = new StudentAdd();
             studentAdd.Show();
             studentAdd.StartPosition = FormStartPosition.CenterScreen;
+            LoadData();
         }
 
 

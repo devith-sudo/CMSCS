@@ -415,7 +415,6 @@ namespace SchoolManagementSystem
                     MaskedTextBox cb = (MaskedTextBox)c;
                     cb.Text = "";
                 }
-
             }
             F.Close();
         }

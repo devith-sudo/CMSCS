@@ -88,10 +88,10 @@ namespace SchoolManagementSystem.Model
 
                 Hashtable ht2 = new Hashtable();
                 ht2.Add("@id", Convert.ToInt32(row.Cells["dgvId"].Value));
-                ht2.Add("@classSubID", Convert.ToInt32(row.Cells["dgvSubID"].Value));
-                ht2.Add("@SubjectID", Convert.ToInt32(row.Cells["dgvStaffID"].Value));
-                ht2.Add("@MinNumber", Convert.ToInt32(row.Cells["dgvMin"].ToString()));
-                ht2.Add("@MaxNumber", Convert.ToInt32(row.Cells["dgvMax"].ToString()));
+                ht2.Add("@classSubID", Convert.ToInt32(row.Cells["dgvID"].Value));
+                ht2.Add("@SubjectID", Convert.ToInt32(row.Cells["dgvSubject"].Value));
+                ht2.Add("@MinNumber", Convert.ToInt32(row.Cells["dgvMinNum"].ToString()));
+                ht2.Add("@MaxNumber", Convert.ToInt32(row.Cells["dgvMaxNum"].ToString()));
 
                 r = MainClass.data_insert_update_delete(qryDetail, ht2);
             }
@@ -115,5 +115,12 @@ namespace SchoolManagementSystem.Model
                 DataGridView.Rows.Add(obj);
             }
         }
+
+        #region DGV_CellFormatting
+        private void DataGridView_CellFormatting(object sender, DataGridViewCellFormattingEventArgs e)
+        {
+            MainClass.SrNo(DataGridView);
+        }
+        #endregion
     }
 }

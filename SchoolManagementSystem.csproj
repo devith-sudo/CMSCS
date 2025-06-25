@@ -272,6 +272,12 @@
     <Compile Include="Views\ExamMarkView.Designer.cs">
       <DependentUpon>ExamMarkView.cs</DependentUpon>
     </Compile>
+    <Compile Include="Views\ExpenseView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\ExpenseView.Designer.cs">
+      <DependentUpon>ExpenseView.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\ParentView.cs">
       <SubType>Form</SubType>
     </Compile>
