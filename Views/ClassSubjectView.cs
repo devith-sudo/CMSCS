@@ -37,14 +37,14 @@ namespace SchoolManagementSystem.Views
         }
         private void LoadData()
         {
-            string qry = @"SELECT cs.csID, c.cName, st.sName, sub.subjectName, sd.MinNumber, sd.MaxNumber 
-               FROM tblClassSubject cs
-               INNER JOIN tblClassSubjectDetails sd ON sd.classSubID = cs.csID
-               INNER JOIN tblClass c ON c.classID = cs.classID
-               INNER JOIN tblStaff st ON st.staffID = sd.teacherID
-               INNER JOIN tblSubject sub ON sub.subjectID = sd.SubjectID
-               WHERE c.cName LIKE '%" + txtSearch.Text + @"%' 
-               ORDER BY c.cName ASC";
+            string qry = "SELECT cs.csID, c.cName, st.sName, sub.subjectName, sd.MinNumber, sd.MaxNumber " +
+                         "FROM tblClassSubject cs " +
+                         "INNER JOIN tblClassSubjectDetails sd ON sd.classSubID = cs.csID " +
+                         "INNER JOIN tblClass c ON c.classID = cs.classID " +
+                         "INNER JOIN tblStaff st ON st.staffID = sd.TeacherID " +
+                         "INNER JOIN tblSubject sub ON sub.subjectID = sd.SubjectID " +
+                         "WHERE c.cName LIKE '%" + txtSearch.Text + "%' " +
+                         "ORDER BY cs.csID";
 
             ListBox lb = new ListBox();
             lb.Items.Add(dgvID);
@@ -66,6 +66,11 @@ namespace SchoolManagementSystem.Views
             LoadData();
         }
 
-
+        #region DGV_CellFormatting
+        private void DataGridView_CellFormatting(object sender, DataGridViewCellFormattingEventArgs e)
+        {
+            MainClass.SrNo(DataGridView);
+        }
+        #endregion
     }
 }

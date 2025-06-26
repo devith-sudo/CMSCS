@@ -121,7 +121,7 @@ namespace SchoolManagementSystem
                     break;
 
                 case "Reports":
-                    AddControls(new Reports());
+                    //AddControls(new Reports());
                     break;
 
                 case "Settings.Logout":

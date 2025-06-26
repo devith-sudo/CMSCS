@@ -107,11 +107,12 @@
             this.DataGridView.ThemeStyle.RowsStyle.Height = 22;
             this.DataGridView.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(139)))), ((int)(((byte)(205)))));
             this.DataGridView.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.Silver;
+            this.DataGridView.CellFormatting += new System.Windows.Forms.DataGridViewCellFormattingEventHandler(this.DataGridView_CellFormatting);
             // 
             // dgvID
             // 
             this.dgvID.FillWeight = 31.79932F;
-            this.dgvID.HeaderText = "ID";
+            this.dgvID.HeaderText = "No.";
             this.dgvID.MinimumWidth = 30;
             this.dgvID.Name = "dgvID";
             this.dgvID.ReadOnly = true;

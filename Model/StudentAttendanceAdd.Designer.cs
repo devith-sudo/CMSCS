@@ -48,6 +48,7 @@
             this.dgvRoll = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dgvChildren = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dgvStatus = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.ButtonPanel.SuspendLayout();
             this.TopPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DataGridView)).BeginInit();
@@ -323,11 +324,30 @@
             this.dgvStatus.Name = "dgvStatus";
             this.dgvStatus.ReadOnly = true;
             // 
+            // guna2Button1
+            // 
+            this.guna2Button1.Animated = true;
+            this.guna2Button1.AutoRoundedCorners = true;
+            this.guna2Button1.BorderRadius = 21;
+            this.guna2Button1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2Button1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2Button1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(112)))), ((int)(((byte)(51)))), ((int)(((byte)(255)))));
+            this.guna2Button1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F);
+            this.guna2Button1.ForeColor = System.Drawing.Color.White;
+            this.guna2Button1.Location = new System.Drawing.Point(778, 112);
+            this.guna2Button1.Name = "guna2Button1";
+            this.guna2Button1.Size = new System.Drawing.Size(117, 45);
+            this.guna2Button1.TabIndex = 7;
+            this.guna2Button1.Text = "Load";
+            // 
             // StudentAttendanceAdd
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(951, 568);
+            this.Controls.Add(this.guna2Button1);
             this.Controls.Add(this.DataGridView);
             this.Controls.Add(this.guna2ComboBox1);
             this.Controls.Add(this.label13);
@@ -365,5 +385,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dgvRoll;
         private System.Windows.Forms.DataGridViewTextBoxColumn dgvChildren;
         private System.Windows.Forms.DataGridViewTextBoxColumn dgvStatus;
+        public Guna.UI2.WinForms.Guna2Button guna2Button1;
     }
 }

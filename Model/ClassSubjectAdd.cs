@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -68,15 +69,18 @@ namespace SchoolManagementSystem.Model
                 qryMain = "UPDATE tblClassSubject SET classID = @classID, teacherID = @teacher WHERE csID = @id";
 
 
-            Hashtable ht = new Hashtable();
-            ht.Add("@id", id);
-            ht.Add("@teacher", Convert.ToInt32(ComboBoxTeacher.SelectedValue));
+            SqlCommand cmd = new SqlCommand(qryMain, MainClass.con);
+            MainClass.con.Open();
+
+            cmd.Parameters.AddWithValue("@id", id);
+            cmd.Parameters.AddWithValue("@classID", Convert.ToInt32(ComboBoxClass.SelectedValue));
 
             if (id == 0)
-                mID = MainClass.data_insert_update_delete(qryMain, ht);
+                mID = Convert.ToInt32(cmd.ExecuteScalar());
             else
                 mID = id; //for update
 
+            MainClass.con.Close();
 
             //Detail Table Insert
             foreach (DataGridViewRow row in DataGridView.Rows)
@@ -84,16 +88,18 @@ namespace SchoolManagementSystem.Model
                 if (Convert.ToString(row.Cells["dgvID"].Value) == "0")
                     qryDetail = "Insert into tblClassSubjectDetails values (@classSubID, @SubjectID, @TeacherID, @MaxNumber, @MinNumber)";
                 else
-                    qryDetail = "Update tblClassSubjectDetails set classSubID = @classSubID, subjectID= @SubjectID, teacherID = @TeacherID, min = @MinNumber, max = @MaxNumber";
+                    qryDetail = "Update tblClassSubjectDetails set classSubID = @classSubID, SubjectID= @SubjectID, TeacherID = @TeacherID, MaxNumber = @MaxNumber, MinNumber = @MinNumber";
 
                 Hashtable ht2 = new Hashtable();
                 ht2.Add("@id", Convert.ToInt32(row.Cells["dgvId"].Value));
-                ht2.Add("@classSubID", Convert.ToInt32(row.Cells["dgvID"].Value));
-                ht2.Add("@SubjectID", Convert.ToInt32(row.Cells["dgvSubject"].Value));
-                ht2.Add("@MinNumber", Convert.ToInt32(row.Cells["dgvMinNum"].ToString()));
-                ht2.Add("@MaxNumber", Convert.ToInt32(row.Cells["dgvMaxNum"].ToString()));
+                ht2.Add("@classSubID", mID);
+                ht2.Add("@SubjectID", Convert.ToInt32(row.Cells["dgvSubID"].Value));
+                ht2.Add("@TeacherID", Convert.ToInt32(row.Cells["dgvStaffID"].Value));
+                ht2.Add("@MinNumber", Convert.ToInt32(row.Cells["dgvMinNum"].Value));
+                ht2.Add("@MaxNumber", Convert.ToInt32(row.Cells["dgvMaxNum"].Value));
 
                 r = MainClass.data_insert_update_delete(qryDetail, ht2);
+                ht2.Clear();
             }
 
             if (r > 0)
@@ -101,6 +107,7 @@ namespace SchoolManagementSystem.Model
                 MessageBox.Show("Save Successfully");
                 MainClass.Enable_Reset(this);
                 id = 0;
+                MainClass.con.Close();
             }
         }
         #endregion
@@ -113,6 +120,11 @@ namespace SchoolManagementSystem.Model
             {
                 object[] obj = { 0, 0, ComboBoxSubject.SelectedValue, ComboBoxSubject.Text, ComboBoxTeacher.SelectedValue, ComboBoxTeacher.Text, txtMinNum.Text, txtMaxNum.Text };
                 DataGridView.Rows.Add(obj);
+
+                ComboBoxSubject.SelectedIndex = -1;
+                ComboBoxTeacher.SelectedIndex = -1;
+                txtMaxNum.Text = "";
+                txtMinNum.Text = "";
             }
         }
 

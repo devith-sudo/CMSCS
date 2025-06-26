@@ -32,9 +32,9 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.DataGridView = new Guna.UI2.WinForms.Guna2DataGridView();
-            this.dgvSr = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.subjectID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dgvName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.subjectID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgvSr = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.DataGridView)).BeginInit();
             this.SuspendLayout();
             // 
@@ -102,11 +102,12 @@
             this.DataGridView.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(139)))), ((int)(((byte)(205)))));
             this.DataGridView.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.Silver;
             // 
-            // dgvSr
+            // dgvName
             // 
-            this.dgvSr.HeaderText = "No.";
-            this.dgvSr.Name = "dgvSr";
-            this.dgvSr.ReadOnly = true;
+            this.dgvName.FillWeight = 124.8124F;
+            this.dgvName.HeaderText = "Subject";
+            this.dgvName.Name = "dgvName";
+            this.dgvName.ReadOnly = true;
             // 
             // subjectID
             // 
@@ -117,12 +118,11 @@
             this.subjectID.ReadOnly = true;
             this.subjectID.Visible = false;
             // 
-            // dgvName
+            // dgvSr
             // 
-            this.dgvName.FillWeight = 124.8124F;
-            this.dgvName.HeaderText = "Subject";
-            this.dgvName.Name = "dgvName";
-            this.dgvName.ReadOnly = true;
+            this.dgvSr.HeaderText = "No.";
+            this.dgvSr.Name = "dgvSr";
+            this.dgvSr.ReadOnly = true;
             // 
             // StudentAttendanceView
             // 
@@ -132,6 +132,7 @@
             this.Controls.Add(this.DataGridView);
             this.Name = "StudentAttendanceView";
             this.Text = "StudentAttendenceView";
+            this.Load += new System.EventHandler(this.StudentAttendanceView_Load);
             this.Controls.SetChildIndex(this.DataGridView, 0);
             ((System.ComponentModel.ISupportInitialize)(this.DataGridView)).EndInit();
             this.ResumeLayout(false);

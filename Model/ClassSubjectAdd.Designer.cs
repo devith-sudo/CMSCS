@@ -52,7 +52,9 @@
             this.DataGridView = new Guna.UI2.WinForms.Guna2DataGridView();
             this.dgvSr = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dgvId = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgvSubID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dgvSubject = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgvStaffID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dgvTeacher = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dgvMinNum = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dgvMaxNum = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -370,7 +372,9 @@
             this.DataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dgvSr,
             this.dgvId,
+            this.dgvSubID,
             this.dgvSubject,
+            this.dgvStaffID,
             this.dgvTeacher,
             this.dgvMinNum,
             this.dgvMaxNum});
@@ -429,12 +433,26 @@
             this.dgvId.ReadOnly = true;
             this.dgvId.Visible = false;
             // 
+            // dgvSubID
+            // 
+            this.dgvSubID.HeaderText = "SubID";
+            this.dgvSubID.Name = "dgvSubID";
+            this.dgvSubID.ReadOnly = true;
+            this.dgvSubID.Visible = false;
+            // 
             // dgvSubject
             // 
             this.dgvSubject.FillWeight = 91.12944F;
             this.dgvSubject.HeaderText = "Subject";
             this.dgvSubject.Name = "dgvSubject";
             this.dgvSubject.ReadOnly = true;
+            // 
+            // dgvStaffID
+            // 
+            this.dgvStaffID.HeaderText = "StaffID";
+            this.dgvStaffID.Name = "dgvStaffID";
+            this.dgvStaffID.ReadOnly = true;
+            this.dgvStaffID.Visible = false;
             // 
             // dgvTeacher
             // 
@@ -511,7 +529,9 @@
         private Guna.UI2.WinForms.Guna2DataGridView DataGridView;
         private System.Windows.Forms.DataGridViewTextBoxColumn dgvSr;
         private System.Windows.Forms.DataGridViewTextBoxColumn dgvId;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dgvSubID;
         private System.Windows.Forms.DataGridViewTextBoxColumn dgvSubject;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dgvStaffID;
         private System.Windows.Forms.DataGridViewTextBoxColumn dgvTeacher;
         private System.Windows.Forms.DataGridViewTextBoxColumn dgvMinNum;
         private System.Windows.Forms.DataGridViewTextBoxColumn dgvMaxNum;
